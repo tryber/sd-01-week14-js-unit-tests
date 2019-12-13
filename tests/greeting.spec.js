@@ -6,7 +6,7 @@ const greeting = require('../src/greeting');
 
 describe('Greeting', () => {
   test('must be a function', () => {
-    expect(typeof(greeting)).toBe('function')
+    expect(typeof (greeting)).toBe('function');
   });
 
   test('If receive a string return a message', () => {

@@ -6,9 +6,9 @@ const last = require('../src/last');
 // Se a função receber uma string, deve retornar o último caractere
 // Se a função receber vários parâmetros, deve retornar o último parâmetro
 
-describe('Last', ()  => {
+describe('Last', () => {
   test('must be a function', () => {
-    expect(typeof(last)).toBe('function')
+    expect(typeof (last)).toBe('function');
   });
 
   describe('If receive a list', () => {
