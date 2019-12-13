@@ -20,7 +20,7 @@ describe('Last', ()  => {
 
   describe('If receive a string', () => {
     test('must return the last character', () => {
-      expect(last('testando')).toBe('o');
+      expect(last('Wellington')).toBe('n');
       expect(last('guilherme')).toBe('e');
     });
   });
@@ -28,12 +28,12 @@ describe('Last', ()  => {
   describe('If receive multiple params', () => {
     test('must return the last parameter', () => {
       expect(last(1, 2)).toBe(2);
-      expect(last('a', 'f', 'b', 'i', 'p')).toBe('p');
+      expect(last('a', 'f', 'b', 'i', 'j')).toBe('j');
     });
 
     test('must return the last element of the last parameter', () => {
       expect(last(1, 4, 7, [6, 5, 4, 3])).toBe(3);
-      expect(last('a', 'b', 'c', ['x', 'y', 'z'])).toBe('z');
+      expect(last('a', 'b', ['x', 'y', 'z'])).toBe('z');
     });
   });
 });
