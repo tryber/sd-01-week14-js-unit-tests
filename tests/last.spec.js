@@ -28,7 +28,7 @@ describe('Last', ()  => {
   describe('If receive multiple params', () => {
     test('must return the last parameter', () => {
       expect(last(1, 2)).toBe(2);
-      expect(last('a', 'f', 'b', 'i', 'j')).toBe('j');
+      expect(last('abacate', 'irineu', 'gilson')).toBe('n');
     });
 
     test('must return the last element of the last parameter', () => {
