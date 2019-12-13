@@ -4,7 +4,7 @@ const duplicate = require('../src/duplicate');
 // A função pode receber strings e números
 // A função retornar true se existirem valores duplicados e false caso contrário
 
-describe('#duplicate', () => {
+describe.skip('#duplicate', () => {
   it('the params 1, 2, 3 are not duplicated', () => {
     expect(duplicate(1, 2, 3)).toBeFalsy();
   });
