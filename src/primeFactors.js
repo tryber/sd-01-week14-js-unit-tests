@@ -5,6 +5,7 @@
 
 function primeFactors(number) {
   const array = [];
+  if (!Number.isInteger(number)) throw new Error('Número não inteiro!');
   for(let index = number; index > 0; index--) {
     array.push(index);
   }
@@ -12,5 +13,4 @@ function primeFactors(number) {
 }
 
 
-console.log(primeFactors(8));
 module.exports = primeFactors;
