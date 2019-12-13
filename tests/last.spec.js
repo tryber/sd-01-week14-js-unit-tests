@@ -12,7 +12,7 @@ describe('#last', () => {
   });
 
   it('Se a função receber uma lista, deve retornar o último elemento', () => {
-    expect(last([1,2,3,4,5])).toBe(5);
+    expect(last([1, 2, 3, 4, 5])).toBe(5);
   });
 
   it('Se a função receber uma string, deve retornar o último caractere', () => {
@@ -21,7 +21,7 @@ describe('#last', () => {
   });
 
   it('Se a função receber vários parâmetros, deve retornar o último parâmetro', () => {
-    expect(last(['ola','wilson'],'bobo',true,4,false)).toBe(false);
+    expect(last(['ola', 'wilson'], 'bobo', true, 4, false)).toBe(false);
     expect(last(false)).toBe(false);
   });
 });
