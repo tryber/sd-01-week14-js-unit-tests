@@ -18,7 +18,7 @@ assert.deepStrictEqual(primeFactors(10), [
   7200,
   50400,
   403200,
-  3628800
+  3628800,
 ]);
 assert.deepStrictEqual(primeFactors(6), [6, 12, 36, 144, 720]);
 assert.deepStrictEqual(primeFactors(3), [3, 6]);

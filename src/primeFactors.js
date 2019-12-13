@@ -8,12 +8,11 @@ const primeFactors = (number) => {
   let value = number;
   if (!Number.isInteger(number)) {
     return 'this is not a number';
-  } else {
-    for (let i = 1; i < number; i++) {
-      lista.push((value *= i));
-    }
-    return lista;
   }
+  for (let i = 1; i < number; i += 1) {
+    lista.push((value *= i));
+  }
+  return lista;
 };
 
 module.exports = primeFactors;
