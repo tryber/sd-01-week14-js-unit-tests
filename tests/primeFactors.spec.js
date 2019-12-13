@@ -7,9 +7,6 @@ describe('#primeFactors', () => {
   it('expect primeFactors is number interger', () => {
     expect(primeFactors('Douglas')).toBe('this is not a number');
   });
-  it('expect primeFactors of not argumento', () => {
-    expect(primeFactors(5)).toBe([5, 10, 30, 120]);
-  });
 });
 
 assert.deepStrictEqual(primeFactors(10), [
