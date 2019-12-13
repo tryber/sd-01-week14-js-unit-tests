@@ -5,7 +5,11 @@ const average = require('../src/average');
 // Caso a função receba algum valor não número, o valor undefined deve ser retornado
 
 describe('#average', () => {
+  
   it('expect average of 3, 4, 5 should be 4', () => {
-    expect(average(3, 4, 5).toBe(4));
+    expect(average(3, 4, 5)).toBe(4);
+  });
+  it('expect average of not number should be undefined', () => {
+    expect(average('teste')).toBe(undefined);
   });
 });
