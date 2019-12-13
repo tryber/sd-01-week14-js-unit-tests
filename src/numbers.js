@@ -4,6 +4,6 @@
 */
 
 const numbers = (...params) =>
-  params.every((select) => typeof select === 'number');
+  params.every(select => typeof select === 'number');
 
 module.exports = numbers;
