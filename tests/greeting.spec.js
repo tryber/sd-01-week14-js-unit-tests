@@ -11,4 +11,3 @@ describe('#greeting', () => {
     expect(greeting).toThrow('You must send something to greet!');
   });
 });
-
