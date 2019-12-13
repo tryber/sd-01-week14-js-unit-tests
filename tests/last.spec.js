@@ -1,8 +1,5 @@
 const last = require('../src/last');
 
-// A função deve receber uma quantidade qualquer de parâmetros
-// A função deve retornar o último elemento do parâmetro passado
-
 test('Se a função receber uma lista, deve retornar o último elemento', () => {
   expect(last([1, 4, 7, 9])).toBe(9);
 });
