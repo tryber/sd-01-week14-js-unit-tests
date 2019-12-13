@@ -3,6 +3,14 @@
   e retorna `true` se existe algum elemento duplicado e `false` caso contrário
  */
 
-function duplicate(params) {}
+function duplicate(...params) {
+  const data = [];
+  for (let i of params) {
+    data.push(i);
+  }
+  const uniqData = data.filter((prm, ind) => data.indexOf(prm) === ind);
+  if (uniqData.length === data.length) return false
+  return true;
+}
 
 module.exports = duplicate;

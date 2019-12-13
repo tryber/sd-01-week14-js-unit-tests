@@ -16,4 +16,8 @@ describe('#numbers', () => {
   it('the params 1 3, NaN are numbers', () => {
     expect(numbers(1, 3, NaN)).toBeTruthy();
   });
+
+  it('the params 1 3,undefined are not numbers', () => {
+    expect(numbers(1, 3, undefined)).toBeFalsy();
+  });
 });

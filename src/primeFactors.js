@@ -3,6 +3,8 @@
   e retorna uma lista com todos os fatores desse parâmetro
 */
 
-function primeFactors(number) {}
+function primeFactors(number) {
+  
+}
 
 module.exports = primeFactors;

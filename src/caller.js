@@ -11,8 +11,11 @@
   some(a, b)
 */
 
-function caller(fn, a, b) {
+function caller(fn, a, ...b) {
+  if (b.length > 1) throw new Error('The funciont must recive a maximum of 3 parameters');
   return fn(a, b);
 }
 
 module.exports = caller;
+
+
