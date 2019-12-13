@@ -6,6 +6,6 @@ const average = require('../src/average');
 
 describe('#average', () => {
   it('expect average of 3, 4, 5 should be 4', () => {
-    expect(average(3, 4, 5).toBe(4));
+    expect(average(3, 4, 5)).toBe(4);
   });
 });
