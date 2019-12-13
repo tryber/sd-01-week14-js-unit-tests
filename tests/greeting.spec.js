@@ -1,6 +1,6 @@
 const greeting = require('../src/greeting');
 
-test('A função deve receber uma string ${param} e retornar a mensagem Hello ${param}!', () => {
+test('A função deve receber uma string e retornar a mensagem', () => {
   expect(greeting('Faraó')).toBe('Hello Faraó!');
 });
 
