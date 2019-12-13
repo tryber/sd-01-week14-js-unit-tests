@@ -4,12 +4,7 @@
 */
 
 function numbers(...params) {
-  const filteredNumbers = params.filter((num) => typeof num === 'number');
-  if(filteredNumbers.length === params.length) {
-    return true
-  } else {
-    return false
-  }
+  return params.every((num) => typeof num === 'number');
 }
 
 module.exports = numbers;
