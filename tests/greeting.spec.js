@@ -9,8 +9,8 @@ describe('#greeting', () => {
   it("A função deve receber uma string ${param} e retornar a mensagem 'Hello ${param}!'", () => {
     expect(greeting('bob')).toBe('Hello bob!');
   });
-  
+
   it('Se nenhum parâmetro for passado um erro deve ser lançado', () => {
-    expect(()=> greeting().toThrow('You must send something to greet!'))
+    expect(() => greeting().toThrow('You must send something to greet!'))
   });
 });
