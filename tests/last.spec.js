@@ -8,7 +8,7 @@ const last = require('../src/last');
 
 describe('#last', () => {
   it('A função deve retornar o último elemento do parâmetro passado', () => {
-    expect(last(arguments)).toBe(arguments[arguments.length - 1]);
+    expect(last('a',['b','c'])).toBe('c');
   });
 
   it('Se a função receber uma lista, deve retornar o último elemento', () => {

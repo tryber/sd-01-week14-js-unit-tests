@@ -11,6 +11,10 @@ describe('#greeting', () => {
   });
 
   it('Se nenhum parâmetro for passado um erro deve ser lançado', () => {
-    expect(() => greeting().toThrow('You must send something to greet!'))
+    expect(greeting).toThrow();
+  });
+
+  it("A mensagem do erro deve ser 'You must send something to greet!'", () => {
+    expect(greeting).toThrow('You must send something to greet!');
   });
 });
