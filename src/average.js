@@ -4,6 +4,17 @@
   Caso a função receba algum valor não número, o valor undefined deve ser retornado
 */
 
-function average(params) {}
+function average(...params) {
+  const filteredNumbers = params.filter((num) => typeof num === 'number');
+  if(filteredNumbers.length === params.length) {
+    let total = 0;
+    for(let index = 0; index < filteredNumbers.length; index++) {
+      total += filteredNumbers[index];
+    }
+    return total / filteredNumbers.length;
+  } else {
+    return undefined
+  }
+}
 
 module.exports = average;
