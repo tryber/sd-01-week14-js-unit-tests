@@ -1,6 +1,6 @@
 const average = require('../src/average');
 
-// A função deve receber uma quantidade qualquer de parâmetros
+// A função deve receber uma quantidade qualquer de parâmetro
 // A função deve retornar a média dos números que receber
 // Caso a função receba algum valor não número, o valor undefined deve ser retornado
 
