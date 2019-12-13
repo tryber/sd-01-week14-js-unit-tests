@@ -13,4 +13,13 @@ describe('#printBinary', () => {
   it('should print binary numbers until 2', () => {
     expect(printBinary(2)).toBe(['00', '01', '10', '11']);
   });
+
+  it('should print a empty array until no numeric param', () => {
+    expect(printBinary('something')).toBe([]);
+  });
+
+  it('should print a empty array until 0', () => {
+    expect(printBinary(0)).toBe([]);
+  });
 });
+

@@ -3,6 +3,8 @@
   e retorna uma lista com todos os números binários existentes com a quantidade ${number} de dígitos
  */
 
-function printBinary(number) {}
+function printBinary(number) {
+  
+}
 
 module.exports = printBinary;
