@@ -8,7 +8,7 @@ function average(...params) {
   const notNumber = params.every(element => typeof (element) === 'number');
   if (!notNumber) return undefined;
   return params.reduce((acc, element) => {
-    let obj = acc + element;
+    const obj = acc + element;
     return obj;
   }) / params.length;
 }
