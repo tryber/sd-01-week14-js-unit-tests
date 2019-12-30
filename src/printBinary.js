@@ -7,11 +7,6 @@ function printBinary(number) {
   const lista = []
   if (!Number.isInteger(number) || number < 1) {
     return lista;
-  } else if (number === 1) {
-    for (let index = 0; index < number + 1; index++) {
-      lista.push((index >>> 0).toString(2))
-    }
-    return lista;
   }
   else {
     for (let index = 0; index <= number + 1; index++) {
