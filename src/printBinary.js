@@ -15,15 +15,19 @@ function printBinary(number) {
   }
   else {
     for (let index = 0; index <= number + 1; index++) {
-      lista.push((index >>> 0).toString(2))
+      if (index < 2) {
+        lista.push('0' + (index >>> 0).toString(2))
+      } else {
+        lista.push((index >>> 0).toString(2))
+      }
     }
     return lista;
   }
 
 }
 
-console.log('............................');
-console.log(printBinary(2));
-console.log('............................');
+// console.log('............................');
+// console.log(printBinary('teste'));
+// console.log('............................');
 
 module.exports = printBinary;
