@@ -4,11 +4,11 @@
  */
 function printMaiorQue1(number) {
   const lista = [];
-  for (let index = 0; index <= number + 1; index++) {
+  for (let index = 0; index <= number + 1; index += 1) {
     if (index < 2) {
-      lista.push('0' + (index >>> 0).toString(2));
+      lista.push(`0${index.toString(2)}`);
     } else {
-      lista.push((index >>> 0).toString(2));
+      lista.push(index.toString(2));
     }
   }
   return lista;
@@ -16,8 +16,8 @@ function printMaiorQue1(number) {
 
 function printiguala1(number) {
   const lista = [];
-  for (let index = 0; index < number + 1; index++) {
-    lista.push((index >>> 0).toString(2));
+  for (let index = 0; index < number + 1; index += 1) {
+    lista.push(index.toString(2));
   }
   return lista;
 }
@@ -68,7 +68,7 @@ function printBinary(value) {
 // // }
 
 // console.log('............................');
-// console.log(printBinary(0));
+// console.log(printBinary(2));
 // console.log('............................');
 
 module.exports = printBinary;
