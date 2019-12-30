@@ -20,6 +20,7 @@ function printBinary(number) {
     arr.push(complete(cont.toString(2), number));
   }
   arr.splice(0, 1);
+  console.log(arr)
   return arr;
 }
 

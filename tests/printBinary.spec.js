@@ -14,6 +14,10 @@ describe('#printBinary', () => {
     expect(printBinary(2)).toEqual(['00', '01', '10', '11']);
   });
 
+  it('should print binary numbers until 3', () => {
+    expect(printBinary(3)).toEqual(['000', '001', '010', '011', '100', '101', '110', '111']);
+  });
+
   it('Se a função receber algum valor não numérico um array vazio deve ser retornado', () => {
     expect(printBinary('algo')).toStrictEqual([]);
   });
