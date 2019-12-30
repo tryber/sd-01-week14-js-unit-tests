@@ -5,6 +5,6 @@
 
 function duplicate(...params) {
   const map = params.filter((elem, pos) => params.indexOf(elem) === pos);
-  return params.length !== map.length
+  return params.length !== map.length;
 }
 module.exports = duplicate;

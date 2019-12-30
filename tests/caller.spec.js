@@ -6,9 +6,8 @@ const caller = require('../src/caller');
 // A função deve executar a função (primeiro parâmetro) com os outros parâmetros recebidos
 // e retornar o resultado
 
-const fn = (a, b) => {
-  return a + b;
-}
+const fn = (a, b) => a + b;
+
 
 describe('#caller', () => {
   it('A soma precisa resultar em 5, 2+3', () => {
