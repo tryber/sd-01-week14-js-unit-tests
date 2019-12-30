@@ -3,30 +3,30 @@
   e retorna uma lista com todos os números binários existentes com a quantidade ${number} de dígitos
  */
 function printMaiorQue1(number) {
-  const lista = []
+  const lista = [];
   for (let index = 0; index <= number + 1; index++) {
     if (index < 2) {
-      lista.push('0' + (index >>> 0).toString(2))
+      lista.push('0' + (index >>> 0).toString(2));
     } else {
-      lista.push((index >>> 0).toString(2))
+      lista.push((index >>> 0).toString(2));
     }
   }
-  return lista
+  return lista;
 }
 
 function printiguala1(number) {
-  const lista = []
+  const lista = [];
   for (let index = 0; index < number + 1; index++) {
-    lista.push((index >>> 0).toString(2))
+    lista.push((index >>> 0).toString(2));
   }
   return lista;
 }
 
 function printBinary(value) {
-  let resposta = []
+  const resposta = [];
   const cases = {
     0: resposta,
-    'teste': resposta,
+    teste: resposta,
     1: printiguala1(value),
     2: printMaiorQue1(value),
     3: printMaiorQue1(value),
