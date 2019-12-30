@@ -6,7 +6,7 @@ const greeting = require('../src/greeting');
 
 
 describe('#greeting', () => {
-  it("A função deve receber uma string ${param} e retornar a mensagem 'Hello ${param}!'", () => {
+  it("A função deve receber uma string  e retornar a mensagem 'Hello {param}!'", () => {
     expect(greeting('bob')).toBe('Hello bob!');
   });
 
