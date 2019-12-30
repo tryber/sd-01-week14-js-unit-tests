@@ -5,9 +5,9 @@
 */
 
 function average(...params) {
-  const notNumber = params.every(element => typeof (element) === 'number')
+  const notNumber = params.every(element => typeof (element) === 'number');
   if (!notNumber) return undefined;
-  return params.reduce((acc, element) => acc += element) / params.length;
+  return params.reduce((acc, element) => { return acc += element }) / params.length;
 }
 
 module.exports = average;
