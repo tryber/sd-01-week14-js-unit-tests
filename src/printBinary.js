@@ -3,6 +3,27 @@
   e retorna uma lista com todos os números binários existentes com a quantidade ${number} de dígitos
  */
 
-function printBinary(number) {}
+function printBinary(number) {
+  const lista = []
+  if (!Number.isInteger(number) || number < 1) {
+    return lista;
+  } else if (number === 1) {
+    for (let index = 0; index < number + 1; index++) {
+      lista.push((index >>> 0).toString(2))
+    }
+    return lista;
+  }
+  else {
+    for (let index = 0; index <= number + 1; index++) {
+      lista.push((index >>> 0).toString(2))
+    }
+    return lista;
+  }
+
+}
+
+console.log('............................');
+console.log(printBinary(2));
+console.log('............................');
 
 module.exports = printBinary;
