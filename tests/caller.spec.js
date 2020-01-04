@@ -9,5 +9,5 @@ const caller = require('../src/caller');
 describe('#caller', () => {
   it('The function have only three params', () => {
     expect(caller(1, 2, 3)).toHaveLength(3);
-  })
-})
+  });
+});

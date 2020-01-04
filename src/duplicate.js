@@ -6,8 +6,8 @@
 function duplicate(...params) {
   const set = new Set(params);
   const set1 = set.size;
-  if(set1 === params.length) return false
-  return true
+  if (set1 === params.length) return false;
+  return true;
 }
 
 module.exports = duplicate;

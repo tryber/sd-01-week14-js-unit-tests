@@ -5,10 +5,10 @@ const assert = require('assert');
 // Se o parâmetro recebido for um valor não inteiro um erro deve ser lançado
 
 describe('#primeFactors', () => {
-    it('factors of numbers', () => {
-        expect(primeFactors(4)).toStrictEqual([4, 12, 24]);
-    });
+  it('factors of numbers', () => {
+    expect(primeFactors(4)).toStrictEqual([4, 12, 24]);
+  });
 });
 
-assert.throws(() => { primeFactors(3.14) }, /^Error: you must send a integer/);
+assert.throws(() => { primeFactors(3.14); }, /^Error: you must send a integer/);
 assert.deepStrictEqual(primeFactors(3), [3, 6]);

@@ -11,6 +11,6 @@ describe('#average', () => {
   });
 
   it('expect average of 3, "amigo", 5 should be undefined', () => {
-    expect(average(3, "amigo", 5)).toBeUndefined();
-  })
+    expect(average(3, 'amigo', 5)).toBeUndefined();
+  });
 });

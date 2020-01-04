@@ -7,7 +7,6 @@ function printBinary(number) {
   const noNumber = number.every(num => typeof num === 'number');
   if (noNumber === false || number === 0) {
     return [];
-  } else {
   }
 }
 
