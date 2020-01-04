@@ -7,7 +7,8 @@
 function average(...params) {
   const isNumberOrNot = params.every(element => typeof element === 'number');
   if (isNumberOrNot) {
-    return params.reduce((averageOf, number) => averageOf + number / params.length, 0);
+    let value = params.reduce((averageOf, number) => averageOf + number, 0);
+    return value / params.length 
   }
   return undefined;
 }
