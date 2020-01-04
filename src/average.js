@@ -5,12 +5,11 @@
 */
 
 function average(...params) {
-  const isNumberOrNot = params.every(element => typeof element === 'number')
+  const isNumberOrNot = params.every(element => typeof element === 'number');
   if (isNumberOrNot) {
     return params.reduce((averageOf, number) => averageOf + number / params.length, 0);
-  } else {
-    return undefined;
   }
+  return undefined;
 }
 
 module.exports = average;
