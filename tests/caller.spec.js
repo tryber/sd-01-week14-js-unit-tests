@@ -6,7 +6,8 @@ const caller = require('../src/caller');
 // A função deve executar a função (primeiro parâmetro) com os outros parâmetros recebidos
 // e retornar o resultado
 
-
-// test('O primeiro parâmetro deve ser uma função', () => {
-//     expect(caller).toBe('function')
-// })
+describe('#caller', () => {
+  it('The function have only three params', () => {
+    expect(caller(1, 2, 3)).toHaveLength(3);
+  })
+})

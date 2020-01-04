@@ -10,7 +10,6 @@ function average(...params) {
     return undefined
   } else {
     let medium = params.reduce((accumulator, currentValue) => accumulator + currentValue);
-    console.log(medium/params.length)
     return (medium/params.length)
   }
 }
