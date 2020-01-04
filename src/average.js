@@ -5,18 +5,14 @@ função average recebe uma lista de parâmetros (tamanho variável)
 */
 
 function average(...params) {
-
-  let medium = params.reduce((accumulator, currentValue) => accumulator + currentValue);
-  console.log(medium/3)
-  return (medium/3)
-  // if(params.every(param => typeof param === 'number')) {
-    
-    // let total = params.reduce((tota, number) => tota + number, 0);
-    // console.log(total)
-    // return total/3
-  // }  else  {
-  //   return undefined
-  // }
+  const number = params.every(param => typeof param === 'number');
+  if (number === false) {
+    return undefined
+  } else {
+    let medium = params.reduce((accumulator, currentValue) => accumulator + currentValue);
+    console.log(medium/params.length)
+    return (medium/params.length)
+  }
 }
 
 module.exports = average;

@@ -8,11 +8,11 @@ const duplicate = require('../src/duplicate');
 //   expect(duplicate). expect.anything()
 // })
 
-// test('A função pode receber strings e números', () => {
+// test('A função pode receber strings', () => {
 //   expect(duplicate).expect.stringContaining(string)
 // })
 
-// test('A função pode receber strings e números', () => {
+// test('A função pode receber números', () => {
 //   expect(duplicate).expect.assertion(number)
 // })
 
