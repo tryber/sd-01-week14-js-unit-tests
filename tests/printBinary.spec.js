@@ -13,4 +13,8 @@ describe('#printBinary', () => {
   it('should print binary numbers until 2', () => {
     expect(printBinary(2)).toBe(['00', '01', '10', '11']);
   });
+
+  it('should print binary numbers until 3', () => {
+    expect(printBinary(3)).toBe(['00', '01', '10', '11', '100', '101', '110', '111'])
+  })
 });
