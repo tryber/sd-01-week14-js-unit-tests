@@ -4,7 +4,7 @@
  */
 
 function duplicate(...params) {
-  return (new Set (params)).size !== params.length
+  return (new Set(params)).size !== params.length;
 }
 
 module.exports = duplicate;
