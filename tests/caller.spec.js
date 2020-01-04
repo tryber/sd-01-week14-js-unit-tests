@@ -1,4 +1,5 @@
 const caller = require('../src/caller');
+
 const addition = (a, b) => a + b;
 const subtraction = (a, b) => a - b;
 const division = (a, b) => a / b;
@@ -23,4 +24,4 @@ describe('#caller', () => {
   it('receives a function first and makes a multiplication', () => {
     expect(caller(multiplication, 32, 94)).toBe(3008);
   });
-})
+});
