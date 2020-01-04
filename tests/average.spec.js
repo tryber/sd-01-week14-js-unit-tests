@@ -18,6 +18,6 @@ describe('#average', () => {
     expect(average(396, 113)).toBe(254.5);
   });
   it('expect function returns undefined for params 1995, idade, 2020, 24, anos', () => {
-    expect(average(1995, 'idade', 2020, 24, 'anos')).toBe(undefined)
+    expect(average(1995, 'idade', 2020, 24, 'anos')).toBe(undefined);
   });
 });
