@@ -9,5 +9,5 @@ test('Se a função receber uma string, deve retornar o último caractere', () =
 });
 
 test('Se a função receber vários parâmetros, deve retornar o último parâmetro', () => {
-  expect(last('Turisas', 17, 13, ['Sabaton', 1966, 'Arch Enemy'],'José')).toBe('é');
+  expect(last('Turisas', 17, 13, ['Sabaton', 1966, 'Arch Enemy'], 'José')).toBe('é');
 });
