@@ -3,7 +3,7 @@
   e retorna `true` se todos os parâmetros forem do tipo Number e `false` caso contrário
 */
 
-const numbers = (...params) =>
-  params.every(element => typeof element === 'number');
-
+function numbers(...params) {
+  return params.every(element => typeof element === 'number');
+}
 module.exports = numbers;
