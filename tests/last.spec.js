@@ -7,14 +7,14 @@ const last = require('../src/last');
 // Se a função receber vários parâmetros, deve retornar o último parâmetro
 
 test('last value', () => {
-  expect(last(["first", "medium", "last"])).toBe("last");
+  expect(last(['first', 'medium', 'last'])).toBe('last');
 });
 
 test('last caracter', () => {
-  expect(last("parent")).toBe("t");
+  expect(last('parent')).toBe('t');
 });
 
-// test('last param', () => {
-//   expect(last("first", "medium", "last")).toBe("last");
-// });
+test('last param', () => {
+  expect(last('first', 'medium', 'last', 129371)).toBe(129371);
+});
 
