@@ -19,7 +19,7 @@ function printBinary(number) {
   for (let cont = 0; verify(arr[arr.length - 1], number); cont += 1) {
     arr.push(complete(cont.toString(2), number));
   }
-  arr.splice(0,1);
+  arr.splice(0, 1);
   return arr;
 }
 
