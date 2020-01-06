@@ -8,7 +8,7 @@ function duplicate(...params) {
   if ([...findDuplicates].length === params.length) {
     return false;
   }
-    return true;
+  return true;
 }
 
 module.exports = duplicate;

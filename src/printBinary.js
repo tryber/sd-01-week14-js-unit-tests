@@ -5,9 +5,9 @@
 
 function completingBinary(valueOf, number) {
   if (valueOf.length < number) {
-    valueOf = `${'0'.repeat(number - value.length)}${value}`;
+    let binary = `${'0'.repeat(number - value.length)}${value}`;
   }
-  return valueOf;
+  return binary;
 }
 
 const calculateNumbersOfArrays = (number) => {
