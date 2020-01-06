@@ -9,15 +9,15 @@ const caller = require('../src/caller');
 describe('#caller', () => {
     const displayParameters = (prmI, prmII) => {
         return `${prmI} ${prmII}`;
-    }
+    };
     test('expect 3 arguments', () => {
         expect(() => { caller(displayParameters, 2, 3, 4) }).toThrow('The function must recive a maximum of 3 parameters');
         expect(() => { caller(1, 2, 3, 4) }).toThrow('The function must recive a maximum of 3 parameters')
-    })
+    });
     test('expect first argument to be a function', () => {
         expect(() => { caller(1, 2, 3) }).toThrow('The first argumnet must be a function');
-    })
+    });
     it('expect the specific result', () => {
         expect(caller(displayParameters, 'Taylor', 'Swift')).toBe('Taylor Swift')
-    })
+    });
 })
