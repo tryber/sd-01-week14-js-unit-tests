@@ -1,6 +1,4 @@
 const caller = require('../src/caller');
-const assert = require('assert');
-const AssertionError = require('assert').AssertionError;
 
 // A função deve receber 3 parâmetros
 // O primeiro parâmetro deve ser uma função
@@ -9,17 +7,17 @@ const AssertionError = require('assert').AssertionError;
 // e retornar o resultado
 
 describe('#caller', () => {
-    const cruelSummer = (prmI, prmII) => {
-        return `${prmI}, ${prmII} received`;
+    const displayParameters = (prmI, prmII) => {
+        return `${prmI} ${prmII}`;
     }
     test('expect 3 arguments', () => {
-       function testArguments() {
-        caller(cruelSummer,2,3,4);
-       } 
+        expect(() => { caller(displayParameters, 2, 3, 4) }).toThrow('The function must recive a maximum of 3 parameters');
+        expect(() => { caller(1, 2, 3, 4) }).toThrow('The function must recive a maximum of 3 parameters')
     })
-
-    expect(testArguments).toTrowError(new Error('The funciont must recive a maximum of 3 parameters'))
-    // it('expect first argument type to be a function', () => {
-    //     expect(caller(cruel))
-    // })
+    test('expect first argument to be a function', () => {
+        expect(() => { caller(1, 2, 3) }).toThrow('The first argumnet must be a function');
+    })
+    it('expect the specific result', () => {
+        expect(caller(displayParameters, 'Taylor', 'Swift')).toBe('Taylor Swift')
+    })
 })

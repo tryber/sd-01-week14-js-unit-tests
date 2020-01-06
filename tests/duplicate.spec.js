@@ -24,4 +24,5 @@ describe('#duplicate', () => {
   it('the params I, ready, for, combat are not duplicated', () => {
     expect(duplicate('I', 'ready', 'for', 'combat')).toBeFalsy();
   });
+
 });
