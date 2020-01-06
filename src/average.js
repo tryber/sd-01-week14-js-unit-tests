@@ -8,7 +8,7 @@ function average(...params) {
   const filteredNumbers = params.filter(num => typeof num === 'number');
   if (filteredNumbers.length === params.length) {
     let total = 0;
-    for (let index = 0; index < filteredNumbers.length; index = index + 1) {
+    for (let index = 0; index < filteredNumbers.length; index += 1) {
       total += filteredNumbers[index];
     }
     return total / filteredNumbers.length;
