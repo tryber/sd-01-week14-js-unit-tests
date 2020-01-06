@@ -6,10 +6,9 @@
 function duplicate(...params) {
   const findDuplicates = new Set(params);
   if ([...findDuplicates].length === params.length) {
-    return false
-  } else {
-    return true
+    return false;
   }
+    return true;
 }
 
 module.exports = duplicate;

@@ -7,8 +7,8 @@ const greeting = require('../src/greeting');
 describe('#greeting', () => {
   it('expect returned message should be a Hello param', () => {
     expect(greeting('everyone')).toBe('Hello everyone!');
-  })
+  });
   it('if no params has been passed, a error message should be returned', () => {
     expect(greeting).toThrow('You must send something to greet!');
-  })
-})
+  });
+});

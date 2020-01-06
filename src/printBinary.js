@@ -3,11 +3,11 @@
   e retorna uma lista com todos os números binários existentes com a quantidade ${number} de dígitos
  */
 
-function completingBinary(value, number) {
-  if (value.length < number) {
-    value = `${'0'.repeat(number - value.length)}${value}`;
+function completingBinary(valueOf, number) {
+  if (valueOf.length < number) {
+    valueOf = `${'0'.repeat(number - value.length)}${value}`;
   }
-  return value
+  return valueOf;
 }
 
 const calculateNumbersOfArrays = (number) => {
@@ -16,21 +16,18 @@ const calculateNumbersOfArrays = (number) => {
     numberOfBinaries *= 2;
   }
   return numberOfBinaries;
-}
+};
 
 function printBinary(number) {
   const result = [];
 
-  if (number === 0 || typeof number !== "number") {
+  if (number === 0 || typeof number !== 'number') {
     return result;
-  } else {
-    for (i = 0; result.length < calculateNumbersOfArrays(number); i += 1) {
-      result.push(completingBinary(i.toString(2), number))
-    }
+  }
+  for (i = 0; result.length < calculateNumbersOfArrays(number); i += 1) {
+    result.push(completingBinary(i.toString(2), number));
   }
   return result;
 }
-
-
 
 module.exports = printBinary;
