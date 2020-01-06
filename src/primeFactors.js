@@ -8,9 +8,9 @@ function primeFactors(number) {
   if (!Number.isInteger(number)) {
     throw new Error("parameters must be integer numbers")
   }
-  for (let num = 2; num <= number; num+=1) {
+  for (let num = 2; num <= number; num += 1) {
     let bolean = true;
-    for (let div = 2; div <= num; div+=1) {
+    for (let div = 2; div <= num; div += 1) {
       if (div !== num && num % div === 0) {
         bolean = false;
       };

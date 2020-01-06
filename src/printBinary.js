@@ -9,7 +9,7 @@ function printBinary(number) {
   if (number === 0 || typeof number !== 'number') {
     return [];
   }
-  for (let i = 0; i < number; i+=1) {
+  for (let i = 0; i < number; i += 1) {
     digBinary.forEach(dig => previosArray.forEach(digt => previosArray.push(dig + digt)));
   }
   arr = previosArray.filter(elm => elm.length === number);
