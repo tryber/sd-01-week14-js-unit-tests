@@ -11,7 +11,7 @@ describe('#printBinary', () => {
   });
 
   it('!number, array empty', () => {
-    expect(printBinary("1")).toStrictEqual([]);
+    expect(printBinary('1')).toStrictEqual([]);
   });
 
   it('should print binary numbers until 1', () => {
