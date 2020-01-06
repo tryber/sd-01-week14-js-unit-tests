@@ -8,4 +8,7 @@ const rpnCalculator = require('../src/rpnCalculator');
 // ps: utilize os exemplos da documentação (README.md) para contrinuir com os testes
 
 describe('#rpnCalculator', () => {
+  it('create a function arthmetic', () => {
+    expect(rpnCalculator(5)).toBe(5);
+  });
 });
