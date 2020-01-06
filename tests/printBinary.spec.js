@@ -16,9 +16,9 @@ describe('#printBinary', () => {
     expect(printBinary(3)).toBe(['00', '01', '10', '11', '100', '101', '110', '111']);
   });
   it('should print a empty array because have 0 in param', () => {
-    expect(printBinary(0)).toBe([]);
+    expect(printBinary(0)).toStrictEqual([]);
   });
   it('should print a empty array because have string in param', () => {
-    expect(printBinary('a')).toBe([]);
+    expect(printBinary('a')).toStrictEqual([]);
   });
 });
