@@ -9,7 +9,7 @@ function duplicate(...params) {
     data.push(i);
   }
   const uniqData = data.filter((prm, ind) => data.indexOf(prm) === ind);
-  if (uniqData.length === data.length) return false
+  if (uniqData.length === data.length) return false;
   return true;
 }
 
