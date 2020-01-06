@@ -22,6 +22,6 @@ function printBinary(number) {
 //     return binaryStringList.sort((a, b) => a - b)
 //   }
 //   return [];
-// }
+}
 
 module.exports = printBinary;
