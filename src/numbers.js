@@ -4,7 +4,7 @@
 */
 
 function numbers(...params) {
-  const bolean = true;
+  let bolean = true;
   params.forEach((i) => {
     if (typeof i !== 'number') bolean = false;
   });
