@@ -4,8 +4,9 @@
  */
 
 function completingBinary(valueOf, number) {
+  let binary = valueOf;
   if (valueOf.length < number) {
-    let binary = `${'0'.repeat(number - value.length)}${value}`;
+    binary = `${'0'.repeat(number - valueOf.length)}${valueOf}`;
   }
   return binary;
 }
