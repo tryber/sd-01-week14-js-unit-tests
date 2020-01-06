@@ -4,12 +4,15 @@
  */
 
 function printBinary(number) {
-  const noNumber = number.every(num => typeof num === 'number');
-  if (noNumber === false || number === 0) {
+  if (typeof number !== 'number' || number === 0) {
     return [];
   }
-  // const squareNumber = number^2;
-  // for 
+  const arrayBinary = [];
+  for (let index = 0; index < number; index += 1) {
+    arrayBinary.splice(index, 0, '0'.repeat(number - index)+'1'.repeat(index));
+    arrayBinary.splice(arrayBinary.length - (index), 0, '1'.repeat(number - index)+'0'.repeat(index));
+  }
+  return arrayBinary;
 }
 
 module.exports = printBinary;

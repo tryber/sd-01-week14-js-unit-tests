@@ -12,7 +12,7 @@ function fn(a, b) {
 
 describe('#caller', () => {
   it('The fn is a function', () => {
-    expect(typeof fn).toBe("function");
+    expect(typeof fn).toBe('function');
   });
 
   it('The return of sum 2 and 3 is 5', () => {

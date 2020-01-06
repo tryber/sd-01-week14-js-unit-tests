@@ -4,7 +4,7 @@ const greeting = require('../src/greeting');
 // Se nenhum parâmetro for passado um erro deve ser lançado
 // A mensagem do erro deve ser 'You must send something to greet!'
 
-test('A função deve receber uma string ${param} e retornar a mensagem Hello {param}!', () => {
+test('A função deve receber uma string World e retornar a mensagem Hello World!', () => {
   expect(greeting('World')).toBe('Hello World!');
 });
 

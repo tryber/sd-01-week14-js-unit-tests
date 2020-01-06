@@ -8,7 +8,7 @@ function average(...params) {
   const number = params.every(param => typeof param === 'number');
   if (number === false) {
     return undefined;
-  } 
+  }
   const medium = params.reduce((accumulator, currentValue) => accumulator + currentValue);
   return (medium / params.length);
 }
