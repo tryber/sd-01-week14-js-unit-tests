@@ -4,7 +4,15 @@
  */
 
 function printBinary(number) {
-  
+  let result = number;
+
+  if(number === 0 || typeof number !== "number" ) {
+    result = [];
+  }
+
+  console.log(result);
+
 }
 
+printBinary("fodase");
 module.exports = printBinary;
