@@ -6,7 +6,7 @@ const greeting = require('../src/greeting');
 
 describe('#greeting', () => {
   test('expect an arguments', () => {
-    expect(() => { greeting() }).toThrow('You must send something to greet!');
+    expect(() => { greeting(); }).toThrow('You must send something to greet!');
   });
   it('expect the menssage: Hello Param', () => {
     expect(greeting('Bolivar Lindo')).toBe('Hello Bolivar Lindo!');
