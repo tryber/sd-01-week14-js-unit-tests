@@ -5,7 +5,7 @@
 
 function duplicate(...params) {
   const findDuplicates = new Set(params);
-  if([...findDuplicates].length === params.length) {
+  if ([...findDuplicates].length === params.length) {
     return false
   } else {
     return true

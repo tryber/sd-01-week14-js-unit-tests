@@ -1,4 +1,4 @@
-const rpnCalculator = require('../src/rpnCalculator');
+// const rpnCalculator = require('../src/rpnCalculator');
 
 // A função deve receber uma string representando a expressão a ser avaliada
 // e retornar o resultado da expressão

@@ -5,6 +5,6 @@
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
 
-function rpnCalculator(expression) {}
+// function rpnCalculator(expression) { }
 
-module.exports = rpnCalculator;
+// module.exports = rpnCalculator;
