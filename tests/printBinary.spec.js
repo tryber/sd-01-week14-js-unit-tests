@@ -9,7 +9,7 @@ describe('#printBinary', () => {
   it('should print empty array', () => {
     expect(printBinary(0)).toStrictEqual([]);
   });
-  
+
   it('should print empty array', () => {
     expect(printBinary(undefined)).toStrictEqual([]);
   });
@@ -25,5 +25,4 @@ describe('#printBinary', () => {
   it('should print binary numbers until 3', () => {
     expect(printBinary(3)).toStrictEqual(['100', '101', '000', '001', '010', '011', '110', '111']);
   });
-
 });
