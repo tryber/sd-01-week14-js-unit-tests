@@ -16,6 +16,6 @@ describe('#average', () => {
     expect(average(3, [2, 2], 1, 5)).toBe(undefined);
     expect(average({ taylor: 'swift' }, 2, 0, 5)).toBe(undefined);
     expect(average(3, 2, undefined, 5)).toBe(undefined);
-    expect(average(3, 10, "25", 5)).toBe(undefined);
+    expect(average(3, 10, '25', 5)).toBe(undefined);
   });
 });

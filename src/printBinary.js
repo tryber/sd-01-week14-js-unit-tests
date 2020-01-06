@@ -9,10 +9,10 @@ function printBinary(number) {
   if (number === 0 || typeof number !== 'number') {
     return [];
   }
-  for(let i = 0; i < number; i++) {
-    digBinary.forEach((dig) => previosArray.forEach((digt) => previosArray.push(dig + digt)));
+  for(let i = 0; i < number; i+=1) {
+    digBinary.forEach(dig => previosArray.forEach(digt => previosArray.push(dig + digt)));
   }
-  arr = previosArray.filter((elm) => elm.length === number);
+  arr = previosArray.filter(elm => elm.length === number);
   return arr.filter((este, i) => arr.indexOf(este) === i);
 }
 

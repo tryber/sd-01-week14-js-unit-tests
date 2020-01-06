@@ -15,7 +15,7 @@ function last(param) {
     return lastElemnt;
   }
   const lastParam = arguments[arguments.length - 1];
-  return lastParam
+  return lastParam;
 }
 
 module.exports = last;
