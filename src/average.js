@@ -8,14 +8,14 @@ function average(...params) {
   let sum = 0;
   let qnt = 0;
   let bolean = true;
-  params.forEach(i => {
+  params.forEach((i) => {
     if (typeof i !== 'number') {
       bolean = false;
-    };
+    }
     sum += i;
     qnt += 1;
-  })
-  if(bolean) {
+  });
+  if (bolean) {
     const avr = sum / qnt;
     if (Number.isInteger(avr)) return avr;
     return Number(avr.toFixed(2));
