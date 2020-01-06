@@ -8,6 +8,8 @@ function printBinary(number) {
   if (noNumber === false || number === 0) {
     return [];
   }
+  // const squareNumber = number^2;
+  // for 
 }
 
 module.exports = printBinary;
