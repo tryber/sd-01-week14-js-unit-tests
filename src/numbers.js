@@ -4,10 +4,11 @@
 */
 
 function numbers(...params) {
-  for (i of params) {
-    if (typeof i !== 'number') return false;
-  }
-  return true;
+  const bolean = true;
+  params.forEach((i) => {
+    if (typeof i !== 'number') bolean = false;
+  });
+  return bolean;
 }
 
 module.exports = numbers;

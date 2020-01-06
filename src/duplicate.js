@@ -5,9 +5,7 @@
 
 function duplicate(...params) {
   const data = [];
-  for (let i of params) {
-    data.push(i);
-  }
+  params.forEach(i => data.push(i));
   const uniqData = data.filter((prm, ind) => data.indexOf(prm) === ind);
   if (uniqData.length === data.length) return false;
   return true;
