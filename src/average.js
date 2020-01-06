@@ -5,16 +5,16 @@
 */
 
 function average(...params) {
-    let sum = 0;
-    let qnt = 0;
-    for(let i of params) {
-      if (typeof i !== "number") return undefined
-      sum += i;
-      qnt += 1;
-    }
-    const average = sum / qnt;
-    if (Number.isInteger(average)) return average;
-    return Number(average.toFixed(2));
+  let sum = 0;
+  let qnt = 0;
+  for (let i of params) {
+    if (typeof i !== "number") return undefined
+    sum += i;
+    qnt += 1;
+  }
+  const average = sum / qnt;
+  if (Number.isInteger(average)) return average;
+  return Number(average.toFixed(2));
 }
 
 module.exports = average;

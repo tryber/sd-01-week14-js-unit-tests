@@ -13,7 +13,7 @@ function last(param) {
     }
     const lastElemnt = param[param.length - 1];
     return lastElemnt;
-  } 
+  }
   const lastParam = arguments[arguments.length - 1];
   return lastParam
 }
