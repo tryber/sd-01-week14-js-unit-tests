@@ -7,7 +7,7 @@ const assert = require('assert');
 // Se o parâmetro recebido for um valor não inteiro um erro deve ser lançado
   
 
-assert.strictEqual(primeFactors(0) ,0);
+assert.deepStrictEqual(primeFactors(0) , []);
 assert.deepStrictEqual(primeFactors(2), [2]);
 assert.deepStrictEqual(primeFactors(4), [2, 3]);
 assert.deepStrictEqual(primeFactors(10), [2,3,5,7])

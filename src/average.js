@@ -5,8 +5,9 @@
 */
 
 function average(...params) {
-    let sum = 0, qnt = 0;
-    for ( let i of params) {
+    let sum = 0;
+    let qnt = 0;
+    for(let i of params) {
       if (typeof i !== "number") return undefined
       sum += i;
       qnt += 1;

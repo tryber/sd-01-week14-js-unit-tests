@@ -5,7 +5,6 @@
 
 function primeFactors(number) {
   const primeList = [];
-  if (number === 1 || number === 0) return number
   if (!Number.isInteger(number)) {
     throw new Error("parameters must be integer numbers")
   }
