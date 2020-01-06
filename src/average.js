@@ -7,14 +7,20 @@
 function average(...params) {
   let sum = 0;
   let qnt = 0;
-  for (let i of params) {
-    if (typeof i !== 'number') return undefined;
+  let bolean = true;
+  params.forEach(i => {
+    if (typeof i !== 'number') {
+      bolean = false;
+    };
     sum += i;
     qnt += 1;
+  })
+  if(bolean) {
+    const avr = sum / qnt;
+    if (Number.isInteger(avr)) return avr;
+    return Number(avr.toFixed(2));
   }
-  const avr = sum / qnt;
-  if (Number.isInteger(avr)) return avre;
-  return Number(avr.toFixed(2));
+  return undefined;
 }
 
 module.exports = average;
