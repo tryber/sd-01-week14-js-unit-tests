@@ -10,7 +10,15 @@ describe('#average', () => {
     expect(average(3, 4, 5)).toBe(4);
   });
 
+  it('expect average of 3, 4, 5 should be 4', () => {
+    expect(average(3, 4, 5, 6, 7)).toBe(5);
+  });
+
   it('expect average of 3, "amigo", 5 should be undefined', () => {
     expect(average(3, 'amigo', 5)).toBeUndefined();
+  });
+
+  it('expect average of 3, "amigo", 5 should be undefined', () => {
+    expect(average(3, 'amigo', 5, 'friend', 4)).toBeUndefined();
   });
 });
