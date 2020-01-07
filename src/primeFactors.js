@@ -9,10 +9,12 @@ function primeFactors(number) {
   if (!Number.isInteger(number)) throw new Error('parameters must be integer numbers');
   for (let num = 2; num <= number; num += 1) {
     bolean = true;
-    for (let div = 2; div < num; div += 1) {
+    let div = 2;
+    while (div < num) {
       if (num % div === 0) {
         bolean = false;
       }
+      div += 1
     }
     if (bolean) {
       primeList.push(num);
