@@ -5,21 +5,17 @@
 
 function primeFactors(number) {
   const primeList = [];
-  let bolean = true;
+  let bolean;
   if (!Number.isInteger(number)) throw new Error('parameters must be integer numbers');
   for (let num = 2; num <= number; num += 1) {
     bolean = true;
-    let div = 2;
-    while (div < num) {
+    for (let div = 2; div < num; div += 1) {
       if (num % div === 0) {
         bolean = false;
-        break
+        break;
       }
-      div += 1;
     }
-    if (bolean) {
-      primeList.push(num);
-    }
+    if (bolean) primeList.push(num);
   }
   return primeList;
 }
