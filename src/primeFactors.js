@@ -13,8 +13,9 @@ function primeFactors(number) {
     while (div < num) {
       if (num % div === 0) {
         bolean = false;
+        break
       }
-      div += 1
+      div += 1;
     }
     if (bolean) {
       primeList.push(num);
