@@ -19,19 +19,4 @@ function primeFactors(number) {
   return primeList.filter(elm => isPrime(elm));
 }
 
-
-
-
 module.exports = primeFactors;
-
-
-// for (let num = 2; num <= number; num += 1) {
-//   bolean = true;
-//   for (let div = 2; div < num; div += 1) {
-//     if (num % div === 0) {
-//       bolean = false;
-//       break;
-//     }
-//   }
-//   if (bolean) primeList.push(num);
-// }
