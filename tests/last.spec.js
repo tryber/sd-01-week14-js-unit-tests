@@ -20,4 +20,7 @@ describe('#last', () => {
   it('expect last of vovozinha should be a', () => {
     expect(last('vovozinha')).toBe('a');
   });
+  it("expect last of ['cachorro', 'gato' 'rato'] should be a", () => {
+    expect(last(['cachorro', 'gato', 'rato'])).toBe('rato');
+  });
 });

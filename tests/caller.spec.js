@@ -11,4 +11,10 @@ describe('#caller', () => {
   it('expect caller of fn, 4, 5 should be fn(4,5)', () => {
     expect(caller(fn, 2, 5)).toBe(10);
   });
+  it('expect caller of fn, 4, 5 should be fn(4,5)', () => {
+    expect(caller(fn, '2', 5)).toBe(10);
+  });
+  it('expect caller of fn, 4, 5 should be fn(4,5)', () => {
+    expect(caller(fn, 2, '5')).toBe(10);
+  });
 });
