@@ -14,7 +14,7 @@ function printBinary(number) {
     }
     array.push(binary);
   }
-  array.splice(0,1);
+  array.splice(0, 1);
   return array;
 }
 

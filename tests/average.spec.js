@@ -15,5 +15,5 @@ describe('#average', () => {
 
   it('if the parameter is not a number', () => {
     expect(average('1')).toBe(undefined);
-  })
+  });
 });

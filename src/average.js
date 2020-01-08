@@ -7,10 +7,10 @@
 function average(...params) {
   if (params.some(param => typeof (param) !== 'number')) return undefined;
   let total = 0;
-  for(let i = 0; i < arguments.length ; i++) {
-    total += params[i]
+  for (let i = 0; i < arguments.length; i += 1) {
+    total += params[i];
   }
-  return total/arguments.length
+  return total / arguments.length;
 }
 
 module.exports = average;
