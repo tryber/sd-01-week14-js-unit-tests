@@ -6,7 +6,6 @@
 function printBinary(number) {
   const binnaryData = ['0','1']
   let resultArray = [];
-  let newString;
   for (let i = 0; i < number/2; i++) {
     for (let j = 0; j < binnaryData.length; j++) {
       for (let k = 0; k < binnaryData.length; k++) {
@@ -21,6 +20,5 @@ function printBinary(number) {
   return resultArray
 }
 
-console.log(printBinary(2))
 
 module.exports = printBinary;
