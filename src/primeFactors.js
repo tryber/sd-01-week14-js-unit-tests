@@ -10,7 +10,6 @@
 
   Para mais informações acerca de fatores primos, acesse esta página:
     -> https://pt.wikipedia.org/wiki/Fator_primo
-
 */
 
 function primeFactors(number) {}
