@@ -6,9 +6,12 @@ const assert = require('assert');
 
 describe('#primeFactors', () => {
   it('factors of numbers', () => {
-    expect(primeFactors(4)).toStrictEqual([4, 12, 24]);
+    expect(primeFactors(3)).toStrictEqual([3]);
   });
 });
 
 assert.throws(() => { primeFactors(3.14); }, /^Error: you must send a integer/);
-assert.deepStrictEqual(primeFactors(3), [3, 6]);
+assert.deepStrictEqual(primeFactors(3), [3]);
+assert.deepStrictEqual(primeFactors(6), [2, 3]);
+assert.deepStrictEqual(primeFactors(12), [2, 2, 3]);
+assert.deepStrictEqual(primeFactors(60), [2, 2, 3, 5]);

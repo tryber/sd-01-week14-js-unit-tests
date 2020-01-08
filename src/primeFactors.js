@@ -20,14 +20,17 @@
 
 function primeFactors(number) {
   const int = parseInt(number, 10);
-  let multi = number;
   const list = [];
+  let multi = number;
   if (int !== number) {
     throw new Error('you must send a integer');
   }
-  for (let index = number - 1; index >= 1; index -= 1) {
-    list.push(multi);
-    multi *= index;
+  for (let index = 2; index <= multi; index += 1) {
+    if (multi % index == 0) {
+      multi = multi / index;
+      list.push(index);
+      index -= 1;
+    }
   }
   return list;
 }
