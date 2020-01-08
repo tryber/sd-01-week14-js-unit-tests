@@ -13,4 +13,12 @@ describe.skip('#printBinary', () => {
   it('should print binary numbers until 2', () => {
     expect(printBinary(2)).toBe(['00', '01', '10', '11']);
   });
+
+  it('should return [] if receives NaN', () => {
+    expect(printBinary('a').toBe([]));
+  });
+
+  it('should return [] if receives 0', () => {
+    expect(printBinary(0)).toBe([]);
+  });
 });
