@@ -11,10 +11,10 @@ describe('#duplicate', () => {
   it('the params 1, 2, 3, 2 are duplicated', () => {
     expect(duplicate(1, 2, 3, 2)).toBeTruthy();
   });
-  it('the params 4, a, 16, corujaEsforçado, 2020, formarei, 2020, JusBrasil are duplicated', () => {
-    expect(duplicate(4, 'a', 16, 'corujaEsforçado', 2020, 'formarei', 2020, 'JusBrasil')).toBeTruthy();
+  it('the params 4, a, 16, corujaEsforçado, true, formarei, false, 2020, formarei, JusBrasil are duplicated', () => {
+    expect(duplicate(4, 'a', 16, 'corujaEsforçado', true, 'formarei', false, 2020, 'formarei', 'JusBrasil')).toBeTruthy();
   });
-  it('the params this, is, sparta, 300 are not duplicated', () => {
-    expect(duplicate('this', 'is', 'sparta', 300)).toBeFalsy();
+  it('the params this, is, sparta, true, 300 are not duplicated', () => {
+    expect(duplicate('this', 'is', true, 'sparta', 300)).toBeFalsy();
   });
 });
