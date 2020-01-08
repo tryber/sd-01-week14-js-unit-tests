@@ -4,7 +4,7 @@
 
   Por exemplo:
 
-  - os fatores primos para o número 15 são: [3, 5], pois 3 * 5 = 15
+  - os fatores primos para o número 15 são: [3, 5], pois 3 * 5 = 15 e ambos 3 e 5 são números primos
   - os fatores primos para o número 9 são: [3, 3], pois 3 * 3 = 9
   - os fatores primos para o número 12 são: [2, 2, 3], pois 2 * 2 * 3 = 12
 
