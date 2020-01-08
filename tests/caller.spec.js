@@ -6,16 +6,19 @@ const caller = require('../src/caller');
 // A função deve executar a função (primeiro parâmetro) com os outros parâmetros recebidos
 // e retornar o resultado
 
-const fn = (a, b) => a + b;
+const add = jest.fn((a, b) => a + b);
 
 
 describe('#caller', () => {
   it('A soma precisa resultar em 5, 2+3', () => {
-    expect(caller(fn, 2, 3)).toBe(5);
+    expect(caller(add, 2, 3)).toBe(5);
+    expect(add).toBeCalledWith(2, 3);
+    expect(add).toHaveBeenCalledTimes(1);
   });
 
-  it('osparametros sao tutus e ronaldo, precisa sair tutusronaldo', () => {
-    expect(caller(fn, 'tutus', 'ronaldo')).toBe('tutusronaldo');
+  it('os parametros sao tutus e ronaldo, precisa sair tutusronaldo', () => {
+    expect(caller(add, 'tutus', 'ronaldo')).toBe('tutusronaldo');
+    expect(add).toBeCalledWith('tutus', 'ronaldo');
   });
 });
 
