@@ -4,6 +4,7 @@ const addition = (a, b) => a + b;
 const subtraction = (a, b) => a - b;
 const division = (a, b) => a / b;
 const multiplication = (a, b) => a * b;
+const add = jest.fn(() => 11);
 
 // A função deve receber 3 parâmetros
 // O primeiro parâmetro deve ser uma função
@@ -12,6 +13,11 @@ const multiplication = (a, b) => a * b;
 // e retornar o resultado
 
 describe('#caller', () => {
+  it('confirm if function has been called', () => {
+    expect(add(2, 9)).toBe(11);
+    expect(add).toHaveBeenCalled();
+    expect(add).toHaveBeenCalledTimes(1);
+  })
   it('receives a function first and makes a addition', () => {
     expect(caller(addition, 5, 6)).toBe(11);
   });
