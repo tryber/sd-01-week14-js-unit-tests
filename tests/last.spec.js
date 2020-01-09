@@ -25,6 +25,3 @@ describe('#last', () => {
     expect(last(false)).toBe(false);
   });
 });
-
-
-  

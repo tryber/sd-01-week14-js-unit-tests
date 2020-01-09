@@ -4,8 +4,8 @@
  */
 
 function duplicate(params) {
-  for (let i = 0; i < params.length; i++) {
-    return params.every(element => element === params[i]);    
+  for (let i = 0; i < params.length; i += 1) {
+    return params.every(element => element === params[i]);
   }
 }
 

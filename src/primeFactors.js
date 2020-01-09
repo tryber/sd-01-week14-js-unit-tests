@@ -5,9 +5,9 @@
 
 function primeFactors(number) {
   let num = number;
-  if (!Number.isInteger(number)) throw new Error('pass integer number');
+  if (!Number.isInteger(number)) throw new Error("pass integer number");
   const arr = [];
-  for (let cont = 2; num !== 1;) {
+  for (let cont = 2; num !== 1; ) {
     if (num % cont === 0) {
       arr.push(cont);
       num /= cont;
