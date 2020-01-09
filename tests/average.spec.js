@@ -9,5 +9,3 @@ describe('#average', () => {
     expect(average(3, 4, 5)).toBe(4);
   });
 });
-
-

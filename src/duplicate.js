@@ -4,13 +4,15 @@
  */
 
 function duplicate(...params) {
-  let storage = [];
+  const storage = [];
   for (value of params) {
     if (storage.includes(value)) {
       return true;
     }
-    storage.push(value)
+    storage.push(value);
   }
+
+  return storage;
 }
 
 module.exports = duplicate;
