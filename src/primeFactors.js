@@ -27,7 +27,7 @@ function primeFactors(number) {
       arr.push(cont);
       num /= cont;
     } else {
-      cont++;
+      cont+=1;
     }
   }
   return arr;

@@ -14,5 +14,5 @@ describe('#primeFactors', () => {
     assert.deepStrictEqual(primeFactors(20), [2, 2, 5]);
     assert.deepStrictEqual(primeFactors(10), [2, 5]);
     assert.deepStrictEqual(primeFactors(5), [5]);
-  })
+  });
 });
