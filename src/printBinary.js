@@ -9,16 +9,16 @@ const addFault = (number, binary) => {
     num = `0${num}`;
   }
   return num;
-}
+};
 
 function printBinary(number) {
   let binToDec = [];
-  let binaryList = [];
-  for (let i = 0; i < number; i++) {
+  const binaryList = [];
+  for (let i = 0; i < number; i += 1) {
     binToDec.push('1');
   }
   binToDec = parseInt(binToDec.join(''), 2);
-  for (let i = 0; i <= binToDec; i++) {
+  for (let i = 0; i <= binToDec; i += 1) {
     binaryList.push(i);
   }
   return binaryList.map(decimal => addFault(number, decimal.toString(2)));
