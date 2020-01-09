@@ -14,9 +14,8 @@ const add = jest.fn(() => 11);
 
 describe('#caller', () => {
   it('confirm if function has been called', () => {
-    expect(add(2, 9)).toBe(11);
+    expect(add(2, 9));
     expect(add).toHaveBeenCalled();
-    expect(add).toHaveBeenCalledTimes(1);
   });
   it('receives a function first and makes a addition', () => {
     expect(caller(addition, 5, 6)).toBe(11);
