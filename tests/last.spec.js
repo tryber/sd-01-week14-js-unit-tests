@@ -8,13 +8,12 @@ const last = require('../src/last');
 
 describe('#last', () => {
   it('Recebe o último elemento do parâmetro.', () => {
-    expect(last(["first", "second", "third"])).toBe("third");
+    expect(last(['first', 'second', 'third'])).toBe('third');
   });
 
   it('Recebe uma string e retorna o último caractere.', () => {
-    expect(last("abcde")).toBe("e");
+    expect(last('abcde')).toBe('e');
   });
-  
   it('Recebe vários parâmetros e retorna o último parâmetro.', () => {
     expect(last('a', 'b', 'c')).toBe('c');
   });

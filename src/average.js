@@ -12,6 +12,6 @@ const average = (...arrayNumber) => {
     media = undefined;
   }
   return media;
-}
+};
 
 module.exports = average;

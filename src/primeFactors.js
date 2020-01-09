@@ -7,7 +7,7 @@ function primeFactors(number) {
   const lista = [];
   let value = number;
 
-  if (!Number.isInteger(number)) throw new Error('Não é um número.')
+  if (!Number.isInteger(number)) throw new Error('Não é um número.');
 
   for (let i = 1; i < number; i += 1) {
     lista.push((value *= i));

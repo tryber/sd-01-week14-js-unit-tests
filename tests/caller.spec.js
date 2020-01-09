@@ -9,10 +9,10 @@ const caller = require('../src/caller');
 const fn = (a, b) => a * b;
 
 describe('#testCaller', () => {
-    it('Caller', () => {
-        expect(caller(fn, 3, 4)).toBe(12);
-    });
-    it('Caller with string', () => {
-        expect(caller(fn, 3, '4')).toBe(12);
-    });
+	it('Caller', () => {
+		expect(caller(fn, 3, 4)).toBe(12);
+	});
+	it('Caller with string', () => {
+		expect(caller(fn, 3, '4')).toBe(12);
+	});
 });
