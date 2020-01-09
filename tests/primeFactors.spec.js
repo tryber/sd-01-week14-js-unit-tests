@@ -12,3 +12,5 @@ describe('#primeFactors', () => {
 		expect(primeFactors(3)).toStrictEqual([6, 6]);
 	});
 });
+
+//Teste

@@ -15,3 +15,5 @@ const average = (...arrayNumber) => {
 };
 
 module.exports = average;
+
+//Teste

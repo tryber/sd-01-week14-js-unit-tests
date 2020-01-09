@@ -17,3 +17,5 @@ describe('#numbers', () => {
     expect(numbers(1, 3, NaN)).toBeTruthy();
   });
 });
+
+//Teste

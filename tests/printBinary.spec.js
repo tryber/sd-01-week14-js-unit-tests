@@ -14,3 +14,5 @@ describe('#printBinary', () => {
     expect(printBinary(2)).toBe(['00', '01', '10', '11']);
   });
 });
+
+//Teste

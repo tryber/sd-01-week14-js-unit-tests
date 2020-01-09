@@ -16,3 +16,5 @@ function caller(fn, a, b) {
 }
 
 module.exports = caller;
+
+//Teste

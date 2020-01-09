@@ -16,3 +16,5 @@ function primeFactors(number) {
 }
 
 module.exports = primeFactors;
+
+//Teste

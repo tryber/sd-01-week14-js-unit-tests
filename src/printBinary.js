@@ -6,3 +6,5 @@
 function printBinary(number) {}
 
 module.exports = printBinary;
+
+//Teste

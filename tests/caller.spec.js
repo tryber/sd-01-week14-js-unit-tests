@@ -16,3 +16,5 @@ describe('#testCaller', () => {
     expect(caller(fn, 3, '4')).toBe(12);
   });
 });
+
+//Teste

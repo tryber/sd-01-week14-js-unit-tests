@@ -6,3 +6,5 @@
 const numbers = (...params) => params.every(number => typeof number === 'number');
 
 module.exports = numbers;
+
+//Teste
