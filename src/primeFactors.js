@@ -33,15 +33,19 @@ function primeValues(number) {
   return primeList.filter(elm => isPrime(elm));
 }
 
+function addFactores(primeList, value) {
+  return primeList.find(elm => value % elm === 0)
+}
+
 function primeFactors(number) {
   if (!Number.isInteger(number)) throw new Error('parameters must be integer numbers');
-  const primeList =  primeValues(number);
+  const primeList = primeValues(number);
   const factors = [];
   let value = number;
   let count = 0;
   while (value > 1) {
-    factors.push(primeList.find(elm => value % elm === 0));
-    value = value / factors[count];
+    factors.push(addFactores(primeList, value));
+    value /= factors[count];
     count += 1;
   }
   return factors;
