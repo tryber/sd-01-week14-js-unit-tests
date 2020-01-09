@@ -7,7 +7,7 @@ function primeFactors(number) {
   let factors = [1, number];
   function addToFactors(n) {
     if (!factors.includes(n)) {
-      factors.push(n)
+      factors.push(n);
     }
   }
   for (let i = 2; i <= number; i++) {
@@ -27,10 +27,10 @@ function primeFactors(number) {
     }
     number = storage;
   }
-  
+
   return factors.sort((a,b) => ( a > b));
 }
 
-console.log(primeFactors(40))
+console.log(primeFactors(40));
 
 module.exports = primeFactors;

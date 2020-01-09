@@ -4,19 +4,19 @@ describe('testa função last', () => {
     // A função deve receber uma quantidade qualquer de parâmetros
     it('função recebe quantidade qualquer de parametros', () => {
         last(arguments);
-        last(2,3,4)
-        last('y','u')
-        expect(arguments.length).toEqual(expect.any(Number))
+        last(2,3,4);
+        last('y','u');
+        expect(arguments.length).toEqual(expect.any(Number));
     })
 
     // A função deve retornar o último elemento do parâmetro passado
     it('funcao retorna o último elemento do parametro passado', () => {
-        expect(last(arguments)).toBe(arguments[arguments.length-1])
+        expect(last(arguments)).toBe(arguments[arguments.length-1]);
     })
 
     // Se a função receber uma lista, deve retornar o último elemento
     it('funcao recebe lista  e retorna ultimo elemento', () => {
-        expect(last(['a',[],{},2,'aki','o,9', 9])).toBe(9)
+        expect(last(['a',[],{},2,'aki','o,9', 9])).toBe(9);
     })
 
     // Se a função receber uma string, deve retornar o último caractere

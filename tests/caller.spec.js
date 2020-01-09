@@ -11,7 +11,7 @@ describe('testa a função caller', () => {
     const fn = jest.fn();
     const a = 'a';
     const b = 8;
-    caller(fn,a,b)
+    caller(fn,a,b);
     expect(fn).toHaveBeenCalledWith(a,b);
   });
 });
