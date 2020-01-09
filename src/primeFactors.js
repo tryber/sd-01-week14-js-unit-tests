@@ -19,13 +19,13 @@
 */
 
 function primeFactors(number) {
-  let num=number;
+  let num = number;
   if (!Number.isInteger(number)) throw new Error('Necessario passar um numero inteiro!');
-  const arr=[];
-  for(let cont=2; num!==1;){
-    if(num % cont === 0){
+  const arr = [];
+  for (let cont = 2; num !== 1;) {
+    if (num % cont === 0) {
       arr.push(cont);
-      num=num/cont;
+      num = num / cont;
     } else {
       cont++;
     }
