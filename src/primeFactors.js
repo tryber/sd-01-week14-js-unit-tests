@@ -25,7 +25,7 @@ function primeFactors(number) {
   for (let cont = 2; num !== 1;) {
     if (num % cont === 0) {
       arr.push(cont);
-      num = num / cont;
+      num /= cont;
     } else {
       cont++;
     }
