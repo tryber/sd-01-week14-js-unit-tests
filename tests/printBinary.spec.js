@@ -21,4 +21,3 @@ describe('#printBinary', () => {
     expect(printBinary(2)).toStrictEqual(['00', '01', '10', '11']);
   });
 });
-
