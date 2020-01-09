@@ -11,7 +11,7 @@ describe("#primeFactors", () => {
     }, /Error: pass integer number/);
   });
 
-  it("factors of numbers", () => {
+  it('factors of numbers', () => {
     assert.deepStrictEqual(primeFactors(3), [3]);
     assert.deepStrictEqual(primeFactors(6), [2, 3]);
     assert.deepStrictEqual(primeFactors(12), [2, 2, 3]);
