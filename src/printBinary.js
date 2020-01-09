@@ -13,7 +13,7 @@ function printBinary(number) {
     digBinary.forEach(dig => previosArray.forEach(digt => previosArray.push(dig + digt)));
   }
   arr = previosArray.filter(elm => elm.length === number);
-  return arr.filter((este, i) => arr.indexOf(este) === i);
+  return arr.filter((este, i) => arr.indexOf(este) === i).sort()
 }
 
 module.exports = printBinary;

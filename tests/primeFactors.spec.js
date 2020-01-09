@@ -10,3 +10,4 @@ assert.deepStrictEqual(primeFactors(2), [2]);
 assert.deepStrictEqual(primeFactors(4), [2, 3]);
 assert.deepStrictEqual(primeFactors(10), [2, 3, 5, 7]);
 assert.throws(primeFactors(4.5), /Error: parameters must be integer numbers/);
+assert.throws(primeFactors(undefined), /Error: parameters must be integer numbers/);

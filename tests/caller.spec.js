@@ -10,14 +10,14 @@ describe('#caller', () => {
   function displayParameters(prmI, prmII) {
     return `${prmI} ${prmII}`;
   }
-  test('expect 3 arguments', () => {
+  it('expect 3 arguments', () => {
     expect(() => { caller(displayParameters, 2, 3, 4); }).toThrow('The function must recive a maximum of 3 parameters');
     expect(() => { caller(1, 2, 3, 4); }).toThrow('The function must recive a maximum of 3 parameters');
   });
-  test('expect first argument to be a function', () => {
-    expect(() => { caller(1, 2, 3); }).toThrow('The first argumnet must be a function');
+  it('expect first argument to be a function', () => {
+    expect(() => { caller(1, 2, 3); }).toThrow('The first argument must be a function');
   });
-  it('expect the specific result', () => {
+  it('expect that the first argument function to be call with the others two parameters', () => {
     expect(caller(displayParameters, 'Taylor', 'Swift')).toBe('Taylor Swift');
   });
 });

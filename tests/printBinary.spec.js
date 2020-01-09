@@ -6,11 +6,11 @@ const printBinary = require('../src/printBinary');
 // Se a função receber o valor 0 (zero) um array vazio deve ser retornado
 
 describe('#printBinary', () => {
-  it('should print empty array', () => {
+  it('should print an empty array for 0, NaN and not numbers values', () => {
     expect(printBinary(0)).toStrictEqual([]);
-  });
-  it('should print empty array', () => {
     expect(printBinary(undefined)).toStrictEqual([]);
+    expect(printBinary(NaN)).toStrictEqual([]);
+    expect(printBinary('capitalism')).toStrictEqual([]);
   });
   it('should print binary numbers until 1', () => {
     expect(printBinary(1)).toStrictEqual(['0', '1']);
@@ -19,6 +19,6 @@ describe('#printBinary', () => {
     expect(printBinary(2)).toStrictEqual(['00', '01', '10', '11']);
   });
   it('should print binary numbers until 3', () => {
-    expect(printBinary(3)).toStrictEqual(['100', '101', '000', '001', '010', '011', '110', '111']);
+    expect(printBinary(3)).toStrictEqual(['000', '001', '010', '011', '100', '101', '110', '111']);
   });
 });

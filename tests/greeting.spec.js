@@ -8,7 +8,7 @@ describe('#greeting', () => {
   test('expect an arguments', () => {
     expect(() => { greeting(); }).toThrow('You must send something to greet!');
   });
-  it('expect the menssage: Hello Param', () => {
+  test('expect the message: Hello Parameter!', () => {
     expect(greeting('Bolivar Lindo')).toBe('Hello Bolivar Lindo!');
   });
 });

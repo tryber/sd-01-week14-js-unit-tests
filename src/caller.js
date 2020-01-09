@@ -13,7 +13,7 @@
 
 function caller(fn, a, b) {
   if (arguments.length > 3) throw new Error('The function must recive a maximum of 3 parameters');
-  if (typeof fn !== 'function') throw new Error('The first argumnet must be a function');
+  if (typeof fn !== 'function') throw new Error('The first argument must be a function');
   return fn(a, b);
 }
 

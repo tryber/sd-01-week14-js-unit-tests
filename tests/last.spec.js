@@ -7,8 +7,8 @@ const last = require('../src/last');
 // Se a função receber vários parâmetros, deve retornar o último parâmetro
 
 describe('#last', () => {
-  it('expect last chars of a string argument', () => {
-    expect(last('taylorswift')).toBe('t');
+  test('expect last chars of a string argument', () => {
+    expect(last('artdontsellunlessyoufuckeveryauthority')).toBe('y');
     expect(last('lovelesss generation ')).toBe(' ');
   });
   it('expect last element of a list', () => {

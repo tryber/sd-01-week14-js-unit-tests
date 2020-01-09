@@ -8,8 +8,7 @@ function last(param) {
   if (arguments.length === 1) {
     if (typeof param === 'string') {
       const arrayString = param.split('');
-      const lastString = arrayString[arrayString.length - 1];
-      return lastString;
+      return arrayString[arrayString.length - 1];
     }
     const lastElemnt = param[param.length - 1];
     return lastElemnt;
