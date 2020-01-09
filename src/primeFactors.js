@@ -31,9 +31,8 @@ const primeFactors = (number) => {
   if (!Number.isInteger(value)) {
     return 'this is not a number interger';
   } else {
-    for (var index = 0; index < number; index += 1) {
+    for (let index = 0; index < number; index += 1) {
       let valor = index;
-
       if (verificarSePrimoTrue(index)) {
         while (value % valor === 0) {
           lista.push(index);
