@@ -34,7 +34,7 @@ function primeValues(number) {
 }
 
 function addFactores(primeList, value) {
-  return primeList.find(elm => value % elm === 0)
+  return primeList.find(elm => value % elm === 0);
 }
 
 function primeFactors(number) {
