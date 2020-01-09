@@ -3,22 +3,29 @@
   e retorna uma lista com todos os números binários existentes com a quantidade ${number} de dígitos
  */
 
+
 function printBinary(number) {
-  const binnaryData = ['0','1']
-  let resultArray = [];
-  for (let i = 0; i < number/2; i++) {
-    for (let j = 0; j < binnaryData.length; j++) {
-      for (let k = 0; k < binnaryData.length; k++) {
-        if (number%2 == 0) {
-          resultArray.push(String(binnaryData[j]) + String(binnaryData[k]))
-        } else {
-          String(binnaryData[j][k]) === 'undefined' ? undefined : resultArray.push(String(binnaryData[j][k]))
-        }
-      }      
-    }
+  if (number === 0 || typeof number !== 'number') {
+    return []
   }
-  return resultArray
+  let decimalEquiv = 0;
+  for (let i = number-1; i >= 0 ; i--) {
+    decimalEquiv += Math.pow(2,i)
+  }
+  let numberList = []
+  for (let j = 0; j <= decimalEquiv ; j++) {
+    numberList.push((j >>> 0).toString(2))
+  }
+  let binArray = numberList.map(num => {
+    while (num.length < number) {
+      num = '0'.concat(num)
+    }
+    return num
+  });
+  console.log(binArray)
+  return binArray
 }
 
+printBinary(3)
 
 module.exports = printBinary;

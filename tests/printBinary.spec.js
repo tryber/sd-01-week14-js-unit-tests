@@ -14,11 +14,15 @@ describe('#printBinary', () => {
     expect(printBinary(2)).toStrictEqual(['00', '01', '10', '11']);
   });
 
+  it('should print binary numbers until 3', () => {
+    expect(printBinary(3)).toStrictEqual(['000', '001', '010', '011', '100', '101','110','111']);
+  });
+
   it('should return [] if receives NaN', () => {
-    expect(printBinary('a')).toStrictEqual([]);
+    expect(printBinary('a')).toEqual([]);
   });
 
   it('should return [] if receives 0', () => {
-    expect(printBinary(0)).toStrictEqual([]);
+    expect(printBinary(0)).toEqual([]);
   });
 });
