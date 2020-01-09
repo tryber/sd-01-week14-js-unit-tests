@@ -8,10 +8,10 @@ const caller = require('../src/caller');
 
 describe('testa a função caller', () => {
   test('if caller passes a and b as arguments to fn', () => {
-      const fn = jest.fn();
-      const a = 'a';
-      const b = 8;
-      caller(fn,a,b)
-      expect(fn).toHaveBeenCalledWith(a,b);
+    const fn = jest.fn();
+    const a = 'a';
+    const b = 8;
+    caller(fn,a,b)
+    expect(fn).toHaveBeenCalledWith(a,b);
   });
 });
