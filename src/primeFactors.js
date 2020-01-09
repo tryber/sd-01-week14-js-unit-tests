@@ -18,16 +18,31 @@
     -> https://pt.wikipedia.org/wiki/Fator_primo
 */
 
+const verificarSePrimoTrue = (numeroASeColocar) => {
+  let inicial = 2;
+  while (inicial <= Math.sqrt(numeroASeColocar))
+    if (numeroASeColocar % (inicial += 1) < 1) return false;
+  return numeroASeColocar > 1;
+};
+
 const primeFactors = (number) => {
   const lista = [];
   let value = number;
-  if (!Number.isInteger(number)) {
-    return 'this is not a number';
+  if (!Number.isInteger(value)) {
+    return 'this is not a number interger';
+  } else {
+    for (var index = 0; index < number; index += 1) {
+      let valor = index;
+
+      if (verificarSePrimoTrue(index)) {
+        while (value % valor === 0) {
+          lista.push(index);
+          value = value / index;
+        }
+      }
+    }
+    return lista;
   }
-  for (let i = 1; i < number; i += 1) {
-    lista.push((value *= i));
-  }
-  return lista;
 };
 
 module.exports = primeFactors;
