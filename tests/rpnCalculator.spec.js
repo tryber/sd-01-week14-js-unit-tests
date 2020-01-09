@@ -5,4 +5,4 @@ const rpnCalculator = require('../src/rpnCalculator');
 // A função deve suportar as operadores: +, -, * e /
 // Qualquer outro operador deve lançar um erro
 
-// ps: utilize os exemplos da documentação (README.md) para contrinuir com os testes
+// ps: utilize os exemplos da documentação (README.md) para contrinuir com os teste
