@@ -8,5 +8,3 @@ function duplicate(...params) {
 }
 
 module.exports = duplicate;
-
-//Teste

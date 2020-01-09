@@ -19,5 +19,3 @@ describe('#duplicate', () => {
     expect(duplicate('a', 'a', 'c', 2, 2)).toBeTruthy();
   });
 });
-
-//Teste

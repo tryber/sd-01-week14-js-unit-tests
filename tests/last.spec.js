@@ -18,5 +18,3 @@ describe('#last', () => {
     expect(last('a', 'b', 'c')).toBe('c');
   });
 });
-
-//Teste

@@ -10,5 +10,3 @@ function last(param) {
 }
 
 module.exports = last;
-
-//Teste

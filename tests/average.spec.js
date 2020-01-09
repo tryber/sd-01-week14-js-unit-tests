@@ -12,5 +12,3 @@ describe('#average', () => {
     expect(average('undefined')).toBe(undefined);
   });
 });
-
-//Teste
