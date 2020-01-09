@@ -26,8 +26,8 @@ function primeFactors(number) {
     throw new Error('you must send a integer');
   }
   for (let index = 2; index <= multi; index += 1) {
-    if (multi % index == 0) {
-      multi = multi / index;
+    if (multi % index === 0) {
+      multi /= index;
       list.push(index);
       index -= 1;
     }
