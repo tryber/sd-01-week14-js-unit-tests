@@ -4,6 +4,14 @@
   Caso a função receba algum valor não número, o valor undefined deve ser retornado
 */
 
-const average = (...arrayNumber) => arrayNumber.reduce((total, score) => total + score) / arrayNumber.length;
+const average = (...arrayNumber) => {
+  let media;
+  if (typeof arrayNumber[0] === 'number') {
+    media = arrayNumber.reduce((total, score) => total + score) / arrayNumber.length;
+  } else {
+    media = undefined;
+  }
+  return media;
+}
 
 module.exports = average;
