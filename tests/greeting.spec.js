@@ -6,8 +6,8 @@ const greeting = require('../src/greeting');
 describe('#greeting', () => {
   it('Função recebe uma String e retorna a mensagem.', () => {
     expect(greeting('Stomatopoda')).toBe('Hello Stomatopoda!');
-	});
+  });
   it('Nenhum parâmetro passado.', () => {
     expect(greeting).toThrow('You must send something to greet!');
-	});
+  });
 });
