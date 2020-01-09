@@ -1,11 +1,11 @@
-const primeFactors = require("../src/primeFactors");
-const assert = require("assert");
+const primeFactors = require('../src/primeFactors');
+const assert = require('assert');
 
 // A função recebe um inteiro e retorna a lista com os fatores desse número
 // Se o parâmetro recebido for um valor não inteiro um erro deve ser lançado
 
 describe("#primeFactors", () => {
-  it("if appear a error, the message (pass integer number) must appear", () => {
+  it('if appear a error, the message (pass integer number) must appear', () => {
     assert.throws(() => {
       primeFactors(3.14);
     }, /Error: pass integer number/);
