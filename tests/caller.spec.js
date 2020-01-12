@@ -18,7 +18,7 @@ describe('#caller', () => {
     expect(add).toHaveBeenCalled();
   });
   it('receives a function first and makes a addition', () => {
-    expect(caller(add, 5, 11)).toBe(16);
+    expect(caller(addition, 5, 11)).toBe(16);
   });
   it('receives a function first and makes a subtraction', () => {
     expect(caller(subtraction, 2020, 1995)).toBe(25);
