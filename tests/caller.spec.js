@@ -4,7 +4,7 @@ const addition = (a, b) => a + b;
 const subtraction = (a, b) => a - b;
 const division = (a, b) => a / b;
 const multiplication = (a, b) => a * b;
-const add = jest.fn(() => 11);
+const add = jest.fn((a , b) => a + b);
 
 // A função deve receber 3 parâmetros
 // O primeiro parâmetro deve ser uma função
@@ -14,11 +14,11 @@ const add = jest.fn(() => 11);
 
 describe('#caller', () => {
   it('confirm if function has been called', () => {
-    expect(add(2, 9));
+    expect(add(2, 9)).toBe(11);
     expect(add).toHaveBeenCalled();
   });
   it('receives a function first and makes a addition', () => {
-    expect(caller(addition, 5, 6)).toBe(11);
+    expect(caller(add, 5, 11)).toBe(16);
   });
   it('receives a function first and makes a subtraction', () => {
     expect(caller(subtraction, 2020, 1995)).toBe(25);
