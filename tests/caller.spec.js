@@ -16,6 +16,7 @@ describe('#caller', () => {
   it('confirm if function has been called', () => {
     expect(add(2, 9)).toBe(11);
     expect(add).toHaveBeenCalled();
+    expect(add).toHaveBeenCalledTimes(1);
   });
   it('receives a function first and makes a addition', () => {
     expect(caller(addition, 5, 11)).toBe(16);
