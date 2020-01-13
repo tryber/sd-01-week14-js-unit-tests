@@ -15,10 +15,11 @@ describe('#printBinary', () => {
   });
 
   it('should print binary numbers until 1', () => {
-    expect(printBinary(1)).toBe(['0', '1']);
+    expect(printBinary(1)).toStrictEqual(['0', '1']);
   });
 
   it('should print binary numbers until 2', () => {
-    expect(printBinary(2)).toBe(['00', '01', '10', '11']);
+    expect(printBinary(2)).toEqual(['00', '01', '10', '11']);
   });
+  
 });

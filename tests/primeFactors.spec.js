@@ -7,7 +7,7 @@ const assert = require('assert');
 describe('#primeFactors', () => {
   it('if appear a error, the message (pass integer number) must appear', () => {
     assert.throws(() => {
-      primeFactors(3.14);
+      primeFactors(4.54);
     }, /Error: pass integer number/);
   });
 

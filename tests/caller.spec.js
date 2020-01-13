@@ -6,27 +6,22 @@ const caller = require('../src/caller');
 // A função deve executar a função (primeiro parâmetro) com os outros parâmetros recebidos
 // e retornar o resultado
 
-function fn(a, b) {
-  return a + b;
-}
+const some = jest.fn((a, b) => a + b);
 
 describe('#caller', () => {
-  it('Confirme if the function is ok', () => {
-    const sum = jest.fn();
-    caller(sum, 1, 2);
-    expect(sum).toHaveBeenCalled();
+  expect(caller(some, 1, 2)).toBe(3);
+  it('the first parameter must be a function', () => {
+    expect(typeof (some)).toBe('function');
   });
 
-  it('The fn is a function', () => {
-    expect(typeof fn).toBe('function');
+  it('expect the function passed to be called with the others parameters', () => {
+    expect(some).toBeCalledWith(1, 2);
+    expect(some).toHaveBeenCalledTimes(1);
   });
 
-  it('The return of sum 2 and 3 is 5', () => {
-    expect(caller(fn, 2, 3)).toBe(5);
+  it('the second and thirty parameter can be of any type', () => {
+    expect(caller(some, '1', '2')).toBe('12');
   });
-
-  it('The return of sum pré- and pago, is pré-pago', () => {
-    expect(caller(fn, 'pré-', 'pago')).toBe('pré-pago');
-  });
+  
 });
 
