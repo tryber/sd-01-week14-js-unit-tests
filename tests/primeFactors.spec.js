@@ -11,5 +11,5 @@ assert.deepStrictEqual(primeFactors(4), [2, 2]);
 assert.deepStrictEqual(primeFactors(9), [3, 3]);
 assert.deepStrictEqual(primeFactors(12), [2, 2, 3]);
 assert.deepStrictEqual(primeFactors(15), [3, 5]);
-assert.throws(primeFactors(4.5), /Error: parameters must be integer numbers/);
-assert.throws(primeFactors(undefined), /Error: parameters must be integer numbers/);
+assert.throws(() => primeFactors(4.5), /Error: parameters must be integer numbers/);
+assert.throws(() => primeFactors(undefined), /Error: parameters must be integer numbers/);
