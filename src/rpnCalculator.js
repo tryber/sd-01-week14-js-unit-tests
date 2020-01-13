@@ -9,16 +9,17 @@ function operation(valueI, operator, valueII) {
   const operators = ['+', '-', '/', '*'];
   switch(operator) {
     case operators[0]:
-      return `${valueI + valueII}`;
+      return Number(valueI) + Number(valueII);
     case operators[1]:
-      return `${valueI - valueII}`;
+      return Number(valueI) - Number(valueII);
     case operators[2]:
-      return `${valueI / valueII}`;
+      return Number(valueI) / Number(valueII);
     case operators[3]:
-      return `${valueI * valueII}`;
+      return Number(valueI) * Number(valueII);
   }
 }
 
+// eval(`${numbers[numbers.length - 2]} ${element} ${numbers[numbers.length - 1]} `);
 
 function rpnCalculator(expression) {
   const arrayStrings = expression.split(' ').filter(element => element !== ' ');
@@ -32,7 +33,7 @@ function rpnCalculator(expression) {
     if (!isNaN(Number(element))) {
       numbers.push(element);
     } else {
-      value = eval(`${numbers[numbers.length - 2]} ${element} ${numbers[numbers.length - 1]} `);
+      value = operation(numbers[numbers.length - 2], element, numbers[numbers.length - 1])
       numbers.splice(numbers.length - 2, 2);
       numbers.push(value);
     }
