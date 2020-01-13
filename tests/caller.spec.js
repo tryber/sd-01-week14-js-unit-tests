@@ -8,7 +8,6 @@ const caller = require('../src/caller');
 
 describe('#caller', () => {
   const displayParameters = jest.fn((prmI, prmII) => `${prmI} ${prmII}`);
-  
   it('expect 3 arguments', () => {
     expect(() => { caller(displayParameters, 2, 3, 4); }).toThrow('The function must recive a maximum of 3 parameters');
     expect(() => { caller(1, 2, 3, 4); }).toThrow('The function must recive a maximum of 3 parameters');

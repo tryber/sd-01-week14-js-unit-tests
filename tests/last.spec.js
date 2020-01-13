@@ -17,8 +17,7 @@ describe('#last', () => {
   });
   it('expect last argument pass', () => {
     expect(last(1, 2, 3, 4, 5)).toBe(5);
-    expect(last('clean', 'blank space', 'you are in love')).toBe('you are in love');
-    expect(last(1, 2, undefined)).toBe(undefined);
-    expect(last(1, 2, 'clean', [1, 2, 3])).toEqual([1, 2, 3]);
+    expect(last('clean', 'blank space', 'you are in love')).toBe('e');
+    expect(last(1, 2, 'clean', [1, 2, 3])).toEqual(3);
   });
 });

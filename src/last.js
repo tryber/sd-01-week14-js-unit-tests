@@ -5,16 +5,8 @@
 */
 
 function last(param) {
-  if (arguments.length === 1) {
-    if (typeof param === 'string') {
-      const arrayString = param.split('');
-      return arrayString[arrayString.length - 1];
-    }
-    const lastElemnt = param[param.length - 1];
-    return lastElemnt;
-  }
   const lastParam = arguments[arguments.length - 1];
-  return lastParam;
+  return lastParam[lastParam.length - 1] || lastParam;
 }
 
 module.exports = last;

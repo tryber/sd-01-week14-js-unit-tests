@@ -5,6 +5,21 @@
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
 
+function operation(valueI, operator, valueII) {
+  const operators = ['+', '-', '/', '*'];
+  switch(operator) {
+    case operators[0]:
+      return `${valueI + valueII}`;
+    case operators[1]:
+      return `${valueI - valueII}`;
+    case operators[2]:
+      return `${valueI / valueII}`;
+    case operators[3]:
+      return `${valueI * valueII}`;
+  }
+}
+
+
 function rpnCalculator(expression) {
   const arrayStrings = expression.split(' ').filter(element => element !== ' ');
   const operators = ['+', '-', '/', '*'];
