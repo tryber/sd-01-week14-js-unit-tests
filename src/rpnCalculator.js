@@ -8,12 +8,12 @@
 function rpnCalculator(expression) {
   const arrayStrings = expression.split(' ').filter(element => element !== ' ');
   const operators = ['+', '-', '/', '*'];
-  arrayStrings.forEach(element => {
+  arrayStrings.forEach((element) => {
     if (isNaN(Number(element)) && !operators.includes(element)) throw new Error('The function do not support this operator or it do not exist');
-  })
-  let numbers = [];
+  });
+  const numbers = [];
   let value;
-  arrayStrings.forEach(element => {
+  arrayStrings.forEach((element) => {
     if (!isNaN(Number(element))) {
       numbers.push(element);
     } else {
@@ -26,5 +26,3 @@ function rpnCalculator(expression) {
 }
 
 module.exports = rpnCalculator;
-
-
