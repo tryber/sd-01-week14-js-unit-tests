@@ -7,7 +7,7 @@
 
 function operation(valueI, operator, valueII) {
   const operators = ['+', '-', '/', '*'];
-  switch(operator) {
+  switch (operator) {
     case operators[0]:
       return Number(valueI) + Number(valueII);
     case operators[1]:
@@ -16,6 +16,8 @@ function operation(valueI, operator, valueII) {
       return Number(valueI) / Number(valueII);
     case operators[3]:
       return Number(valueI) * Number(valueII);
+    default:
+      return false;
   }
 }
 
@@ -33,7 +35,7 @@ function rpnCalculator(expression) {
     if (!isNaN(Number(element))) {
       numbers.push(element);
     } else {
-      value = operation(numbers[numbers.length - 2], element, numbers[numbers.length - 1])
+      value = operation(numbers[numbers.length - 2], element, numbers[numbers.length - 1]);
       numbers.splice(numbers.length - 2, 2);
       numbers.push(value);
     }
