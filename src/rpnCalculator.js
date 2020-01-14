@@ -4,11 +4,32 @@
 
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
-const ifs = (elm1, elm2, stack) => {
+const if1 = (elm1, elm2, stack) => {
   if (elm1 == elm2) {
     let a = parseInt(stack.splice(-1)[0], 10)
     let b = parseInt(stack.splice(-1)[0], 10)
     stack.push(a+b)
+  }
+}
+const if2 = (elm1, elm2, stack) => {
+  if (elm1 == elm2) {
+    let a = parseInt(stack.splice(-1)[0], 10)
+    let b = parseInt(stack.splice(-1)[0], 10)
+    stack.push(b-a)
+  }
+}
+const if3 = (elm1, elm2, stack) => {
+  if (elm1 == elm2) {
+    let a = parseInt(stack.splice(-1)[0], 10)
+    let b = parseInt(stack.splice(-1)[0], 10)
+    stack.push(a*b)
+  }
+}
+const if4 = (elm1, elm2, stack) => {
+  if (elm1 == elm2) {
+    let a = parseInt(stack.splice(-1)[0], 10)
+    let b = parseInt(stack.splice(-1)[0], 10)
+    stack.push(b/a)
   }
 }
 
@@ -31,27 +52,10 @@ function rpnCalculator(expression) {
     if (index < 0) {
       stack.push(arrayStrings[i])
     } else {
-      // if (index == 0) {
-      //   let a = parseInt(stack.splice(-1)[0], 10)
-      //   let b = parseInt(stack.splice(-1)[0], 10)
-      //   stack.push(a+b)
-      // }
-      ifs(index, 0, stack);
-      if (index == 1) {
-      let a = parseInt(stack.splice(-1)[0], 10)
-        let b = parseInt(stack.splice(-1)[0], 10)
-        stack.push(b-a)
-      }
-      if (index == 2) {
-        let a = parseInt(stack.splice(-1)[0], 10)
-        let b = parseInt(stack.splice(-1)[0], 10)
-        stack.push(a*b)
-      }
-      if (index == 3) {
-      let a = parseInt(stack.splice(-1)[0], 10)
-        let b = parseInt(stack.splice(-1)[0], 10)
-        stack.push(b/a)
-      }
+      if1(index, 0, stack);
+      if2(index, 1, stack);
+      if3(index, 2, stack);
+      if4(index, 3, stack);
     }
      i++
   }
