@@ -5,30 +5,29 @@
 
 function primeFactors(number) {
   let factors = [1, number];
-  function addToFactors(n) {
+  function addToFactors(n, m) {
     if (!factors.includes(n)) {
       factors.push(n);
+    }
+    if (!factors.includes(m)) {
+      factors.push(m);
     }
   }
   for (let i = 2; i <= number; i++) {
     const storage = number;
     if (number % i === 0) {
-      addToFactors(number);
-      addToFactors(i);
+      addToFactors(number, i);
       while((number/i)%i === 0) {
-        addToFactors(i);
-        addToFactors(number);
+        addToFactors(number, i);
         number = number/i;
-        addToFactors(i);
-        addToFactors(number);
+        addToFactors(number, i);
       }
-      addToFactors(i);
-      addToFactors(number);
+      addToFactors(number, i);
     }
     number = storage;
   }
 
-  return factors.sort((a,b) => ( a > b));
+  return factors;
 }
 
 console.log(primeFactors(40));
