@@ -22,6 +22,6 @@ function printBinary(number) {
   return binArray;
 }
 
-printBinary(2);
+printBinary(3);
 
 module.exports = printBinary;
