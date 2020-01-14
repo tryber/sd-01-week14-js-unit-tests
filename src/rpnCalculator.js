@@ -4,6 +4,13 @@
 
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
+const ifs = (elm1, elm2, stack) => {
+  if (elm1 == elm2) {
+    let a = parseInt(stack.splice(-1)[0], 10)
+    let b = parseInt(stack.splice(-1)[0], 10)
+    stack.push(a+b)
+  }
+}
 
 function rpnCalculator(expression) {
 
@@ -15,7 +22,7 @@ function rpnCalculator(expression) {
   i++
 
   arrayStrings.forEach((element) => {
-     if (isNaN(Number(element)) && !operands.includes(element)) throw new Error('The function do not support this operator or it do not exist');
+    if (isNaN(Number(element)) && !operands.includes(element)) throw new Error('The function do not support this operator or it do not exist');
   });
   
   while(i <= arrayStrings.length) {
@@ -24,11 +31,12 @@ function rpnCalculator(expression) {
     if (index < 0) {
       stack.push(arrayStrings[i])
     } else {
-      if (index == 0) {
-        let a = parseInt(stack.splice(-1)[0], 10)
-        let b = parseInt(stack.splice(-1)[0], 10)
-        stack.push(a+b)
-      }
+      // if (index == 0) {
+      //   let a = parseInt(stack.splice(-1)[0], 10)
+      //   let b = parseInt(stack.splice(-1)[0], 10)
+      //   stack.push(a+b)
+      // }
+      ifs(index, 0, stack);
       if (index == 1) {
       let a = parseInt(stack.splice(-1)[0], 10)
         let b = parseInt(stack.splice(-1)[0], 10)
