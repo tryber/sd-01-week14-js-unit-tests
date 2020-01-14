@@ -22,6 +22,4 @@ describe('#caller', () => {
   it('the second and thirty parameter can be of any type', () => {
     expect(caller(some, '1', '2')).toBe('12');
   });
-  
 });
-
