@@ -21,5 +21,4 @@ describe('#printBinary', () => {
   it('should print binary numbers until 2', () => {
     expect(printBinary(2)).toEqual(['00', '01', '10', '11']);
   });
-  
 });

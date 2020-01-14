@@ -39,7 +39,7 @@ function rpnCalculator(expression) {
   let i = 0;
   const arrayStrings = expression.split(' ').filter(element => element !== ' ');
   stack.push(arrayStrings[i]);
-  i +=
+  i += 1;
 
   arrayStrings.forEach((element) => {
     if (isNaN(Number(element)) && !operands.includes(element)) throw new Error('The function do not support this operator or it do not exist');
@@ -56,7 +56,7 @@ function rpnCalculator(expression) {
       if3(index, 2, stack);
       if4(index, 3, stack);
     }
-    i++;
+    i += 1;
   }
   return parseInt(stack[0], 10);
 }
