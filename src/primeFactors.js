@@ -12,14 +12,11 @@ function primeFactors(number) {
     }
   for (let i = 2; i <= number; i++) {
     const storage = number;
-    if (number % i === 0) {
-      addToFactors(i);
-      while((number/i)%i === 0) {
+      while(number%i === 0) {
         addToFactors(i);
         addToFactors(number);
         number = number/i;
       }
-    }
     number = storage;
   }
 
