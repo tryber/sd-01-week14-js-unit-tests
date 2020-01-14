@@ -5,47 +5,46 @@
   referência: https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
 const if1 = (elm1, elm2, stack) => {
-  if (elm1 == elm2) {
-    let a = parseInt(stack.splice(-1)[0], 10)
-    let b = parseInt(stack.splice(-1)[0], 10)
-    stack.push(a+b)
+  if (elm1 === elm2) {
+    let a = parseInt(stack.splice(-1)[0], 10);
+    let b = parseInt(stack.splice(-1)[0], 10);
+    stack.push(a + b);
   }
-}
+};
 const if2 = (elm1, elm2, stack) => {
-  if (elm1 == elm2) {
-    let a = parseInt(stack.splice(-1)[0], 10)
-    let b = parseInt(stack.splice(-1)[0], 10)
-    stack.push(b-a)
+  if (elm1 === elm2) {
+    const a = parseInt(stack.splice(-1)[0], 10);
+    const b = parseInt(stack.splice(-1)[0], 10);
+    stack.push(b - a);
   }
-}
+};
 const if3 = (elm1, elm2, stack) => {
-  if (elm1 == elm2) {
-    let a = parseInt(stack.splice(-1)[0], 10)
-    let b = parseInt(stack.splice(-1)[0], 10)
-    stack.push(a*b)
+  if (elm1 === elm2) {
+    const a = parseInt(stack.splice(-1)[0], 10);
+    const b = parseInt(stack.splice(-1)[0], 10);
+    stack.push(a * b);
   }
-}
+};
 const if4 = (elm1, elm2, stack) => {
-  if (elm1 == elm2) {
-    let a = parseInt(stack.splice(-1)[0], 10)
-    let b = parseInt(stack.splice(-1)[0], 10)
-    stack.push(b/a)
+  if (elm1 === elm2) {
+    const a = parseInt(stack.splice(-1)[0], 10);
+    const b = parseInt(stack.splice(-1)[0], 10);
+    stack.push(b / a);
   }
-}
+};
 
 function rpnCalculator(expression) {
-
-  let operands = ['+', '-', '*', '/' ]
-  let stack = []
-  let i = 0
+  const operands = ['+', '-', '*', '/'];
+  let stack = [];
+  let i = 0;
   const arrayStrings = expression.split(' ').filter(element => element !== ' ');
   stack.push(arrayStrings[i])
-  i++
+  i+=
 
   arrayStrings.forEach((element) => {
     if (isNaN(Number(element)) && !operands.includes(element)) throw new Error('The function do not support this operator or it do not exist');
   });
-  
+
   while(i <= arrayStrings.length) {
     let item = arrayStrings[i]
     let index = operands.indexOf(item)
