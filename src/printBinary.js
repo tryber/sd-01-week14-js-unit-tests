@@ -8,10 +8,7 @@ function printBinary(number) {
   if (number === 0 || typeof number !== 'number') {
     return [];
   }
-  let decimalEquiv = 0;
-  for (let i = number-1; i >= 0 ; i--) {
-    decimalEquiv += Math.pow(2,i);
-  }
+  let decimalEquiv = Math.pow(2,number) - 1;
   let numberList = []
   for (let j = 0; j <= decimalEquiv ; j++) {
     numberList.push((j >>> 0).toString(2));
@@ -25,6 +22,6 @@ function printBinary(number) {
   return binArray;
 }
 
-printBinary(3);
+printBinary(2);
 
 module.exports = printBinary;
