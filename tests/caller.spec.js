@@ -8,10 +8,9 @@ const caller = require('../src/caller');
 const fn = (a, b) => a + b;
 
 describe('#caller', () => {
-  const fnJestType = jest.fn();
+  const fnJestType = jest.fn((a, b) => a + b);
   it('expect return of params fn, 10, 5 should be 15', () => {
-    expect(caller(fn, 10, 5)).toBe(15);
-    caller(fnJestType, 10, 5);
+    expect(caller(fnJestType, 10, 5)).toBe(15);
     expect(fnJestType).toHaveBeenCalledWith(10, 5);
     expect(fnJestType).toHaveBeenCalledTimes(1);
   });
