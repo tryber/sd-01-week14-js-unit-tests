@@ -4,11 +4,13 @@ const assert = require('assert');
 // A função recebe um inteiro e retorna a lista com os fatores desse número
 // Se o parâmetro recebido for um valor não inteiro um erro deve ser lançado
 
-assert.deepEqual(primeFactors(5), [20, 60, 120, 120]);
-assert.throws(() => primeFactors(2.1), /Não é um número inteiro!/);
-
-describe('#primeFactors', () => {
-  it('expect prime factor 3', () => {
-    expect(primeFactors(3)).toStrictEqual([6, 6]);
+describe('primeFactors', () => {
+  it('Se o parâmetro recebido for um valor não inteiro um erro deve ser lançado', () => {
+    assert.throws(() => { primeFactors(7.04); }, /Error: O número precisa ser um Inteiro!/);
+  });
+  it('A função recebe um inteiro e retorna a lista com os fatores desse número', () => {
+    assert.deepStrictEqual(primeFactors(3), [3]);
+    assert.deepStrictEqual(primeFactors(6), [2, 3]);
+    assert.deepStrictEqual(primeFactors(12), [2, 2, 3]);
   });
 });

@@ -4,15 +4,17 @@
 */
 
 function primeFactors(number) {
-  const lista = [];
-  let value = number;
-
-  if (!Number.isInteger(number)) throw new Error('Não é um número.');
-
-  for (let i = 1; i < number; i += 1) {
-    lista.push((value *= i));
+  const list = [];
+  let numberInput = number;
+  if (!Number.isInteger(number)) throw new Error('O número precisa ser um Inteiro!');
+  for (let index = 2; index <= numberInput; index += 1) {
+    if (numberInput % index === 0) {
+      numberInput /= index;
+      list.push(index);
+      index -= 1;
+    }
   }
-  return lista;
+  return list;
 }
 
 module.exports = primeFactors;
