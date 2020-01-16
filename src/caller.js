@@ -12,6 +12,8 @@
 */
 
 function caller(fn, a, b) {
+  if (arguments.length > 3) throw new Error('Não pode ter mais que 3 argumentos!');
+  if (typeof fn !== 'function') throw new Error('O primeiro argumento precisa ser uma função!');
   return fn(a, b);
 }
 
