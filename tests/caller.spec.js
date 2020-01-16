@@ -4,7 +4,7 @@ const addition = (a, b) => a + b;
 const subtraction = (a, b) => a - b;
 const division = (a, b) => a / b;
 const multiplication = (a, b) => a * b;
-const add = jest.fn((a , b) => a + b);
+const add = jest.fn((a, b) => a + b);
 
 // A função deve receber 3 parâmetros
 // O primeiro parâmetro deve ser uma função
