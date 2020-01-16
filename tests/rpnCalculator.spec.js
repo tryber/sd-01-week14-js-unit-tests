@@ -24,7 +24,7 @@ describe('#rpnCalculator', () => {
     expect(rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -')).toBe(5);
   });
   it('if another operator has been passed, a message error should be returned', () => {
-    expect(() => rpnCalculator('3 4 .')).toThrow('You should only use the following operators: +, -, *, /');
-    expect(() => rpnCalculator('1 2 3 . ^')).toThrow('You should only use the following operators: +, -, *, /');
+    expect(() => rpnCalculator('3 4 .')).toThrow('The function do not support this operator or it do not exist');
+    expect(() => rpnCalculator('1 2 3 . ^')).toThrow('The function do not support this operator or it do not exist');
   });
 });
