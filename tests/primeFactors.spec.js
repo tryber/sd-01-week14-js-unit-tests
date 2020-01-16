@@ -8,7 +8,7 @@ describe('Error Test', () => {
   test('Show error when number is not integer', () => {
     assert.throws(() => primeFactors(9.7), /Este número não é inteiro!/);
   });
-})
+});
 
 describe('Prime Factors List', () => {
   test('Testando se os fatores primos do número 1048 são 2 e 7.', () => {
