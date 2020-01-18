@@ -8,16 +8,17 @@ function printBinary(number) {
   if (number === 0 || typeof number !== 'number') {
     return [];
   }
-  let decimalEquiv = Math.pow(2,number) - 1;
-  let numberList = []
-  for (let j = 0; j <= decimalEquiv ; j++) {
-    numberList.push((j >>> 0).toString(2));
+  const decimalEquiv = 2 ** number - 1;
+  const numberList = [];
+  for (let j = 0; j <= decimalEquiv; j += 1) {
+    numberList.push(j.toString(2));
   }
-  let binArray = numberList.map(num => {
-    while (num.length < number) {
-      num = '0'.concat(num);
+  const binArray = numberList.map((num) => {
+    let decoyNum = num;
+    while (decoyNum.length < number) {
+      decoyNum = '0' + decoyNum;
     }
-    return num;
+    return decoyNum;
   });
   return binArray;
 }

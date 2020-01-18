@@ -4,25 +4,24 @@
 */
 
 function primeFactors(number) {
-  let factors = [1, number];
+  let decoyNumber = number;
+  const factors = [1, decoyNumber];
   function addToFactors(n) {
     if (!factors.includes(n)) {
       factors.push(n);
-     }
     }
-  for (let i = 2; i <= number; i++) {
-    const storage = number;
-      while(number%i === 0) {
-        addToFactors(i);
-        addToFactors(number);
-        number = number/i;
-      }
-    number = storage;
+  }
+  for (let i = 2; i <= decoyNumber; i += 1) {
+    const storage = decoyNumber;
+    while(decoyNumber % i === 0) {
+      addToFactors(i);
+      addToFactors(decoyNumber);
+      decoyNumber /= i;
+    }
+    decoyNumber = storage;
   }
 
   return factors;
 }
-
-console.log(primeFactors(40));
 
 module.exports = primeFactors;

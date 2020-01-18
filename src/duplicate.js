@@ -5,14 +5,14 @@
 
 function duplicate(...params) {
   const storage = [];
-  for (value of params) {
-    if (storage.includes(value)) {
+  const booleanArray = [...params].map((param) => {
+    if (storage.includes(param)) {
       return true;
     }
-    storage.push(value);
-  }
-
-  return storage;
+    storage.push(param);
+    return false;
+  });
+  return booleanArray.includes(true);
 }
 
 module.exports = duplicate;

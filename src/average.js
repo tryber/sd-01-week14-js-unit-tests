@@ -10,6 +10,4 @@ function average(...params) {
   return sum / params.length;
 }
 
-console.log(average(2, 3, 4));
-
 module.exports = average;

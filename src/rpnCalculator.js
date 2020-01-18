@@ -6,13 +6,13 @@
  */
 
 function rpnCalculator(expression) {
-  let numExp = expression.split(' ');
-  const opRegex = /[\+\-\/\*]\B/g;
+  const numExp = expression.split(' ');
+  const opRegex = /[+-/*]\B/g;
   const math = {
-    '+': function (x, y) { return x + y },
-    '-': function (x, y) { return x - y },
-    '/': function (x, y) { return x / y },
-    '*': function (x, y) { return x * y }
+    '+': function plus(x, y) { return x + y },
+    '-': function minus(x, y) { return x - y },
+    '/': function division(x, y) { return x / y },
+    '*': function multiply(x, y) { return x * y }
   }
   function iterate() {
     let index = numExp.findIndex((element) => String(element).match(opRegex) );

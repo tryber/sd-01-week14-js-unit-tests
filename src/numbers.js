@@ -4,7 +4,7 @@
 */
 
 function numbers(...params) {
-  return params.every((param) => typeof param === 'number');
+  return params.every(param => typeof param === 'number');
 }
 
 module.exports = numbers;
