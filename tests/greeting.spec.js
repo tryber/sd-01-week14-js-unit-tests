@@ -21,5 +21,4 @@ describe('testa a função greeting', () => {
   test("error returns 'You must send something to greet!'", () => {
     expect(greeting).toThrow('You must send something to greet!');
   });
-
 });
