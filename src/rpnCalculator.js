@@ -13,7 +13,7 @@ function rpnCalculator(expression) {
     '-': (x, y) => x - y,
     '/': (x, y) => x / y,
     '*': (x, y) => x * y,
-  }
+  };
   function iterate() {
     const index = numExp.findIndex(element => String(element).match(opRegex));
     const calc = (op) => {
@@ -21,8 +21,8 @@ function rpnCalculator(expression) {
       numExp.splice(index - 2, 3, newValue);
       return numExp;
     };
-    if (index == -1) {
-      throw "Você não usou operadores adequados."
+    if (index === -1) {
+      throw new Error('Você não usou operadores adequados.');
     }
     calc(numExp[index]);
 
