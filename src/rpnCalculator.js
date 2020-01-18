@@ -6,37 +6,31 @@
  */
 
 function rpnCalculator(expression) {
-  expression = expression.split(' ')
-  const opRegex = /[\s\+-\/\*]/g;
-    function iterate() {
-      for (char of expression) {
-        if (String(char).search(opRegex) !== -1) {
-            let currentOp = char[String(char).search(opRegex)];
-            let index = expression.indexOf(currentOp);
-            let newValue;
-            switch (currentOp) {
-              case '+':
-                newValue = Number(expression[index-2]) + Number(expression[index-1]);
-                expression.splice(index-2, 3, newValue);
-                return expression;
-              case '-':
-                newValue = Number(expression[index-2]) - Number(expression[index-1]);
-                expression.splice(index-2, 3, newValue);
-                return expression;
-              case '/':
-                newValue = Number(expression[index-2]) / Number(expression[index-1]);
-                expression.splice(index-2, 3, newValue);
-                return expression;
-              case '*':
-                newValue = Number(expression[index-2]) * Number(expression[index-1]);
-                expression.splice(index-2, 3, newValue);
-                return expression;
-            }
-        }
-      }
-    }
-    while(expression.length > 1) iterate();
-  return Number(expression);
+  let numExp = expression.split(' ');
+  const opRegex = /[\+\-\/\*]\B/g;
+  const math = {
+    '+': function (x, y) { return x + y },
+    '-': function (x, y) { return x - y },
+    '/': function (x, y) { return x / y },
+    '*': function (x, y) { return x * y }
+  }
+  function iterate() {
+    let index = numExp.findIndex((element) => String(element).match(opRegex) );
+    const calc = (op) => {
+      let newValue = math[op](Number(numExp[index-2]),Number(numExp[index-1]))
+      numExp.splice(index-2, 3, newValue);
+      return numExp;
+    };
+    if (index !== -1) {
+        calc(numExp[index])
+    };
+    return numExp
+  };
+
+  while(numExp.length !== 1) iterate();
+  return Number(numExp)
 }
+
+rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -');
 
 module.exports = rpnCalculator;
