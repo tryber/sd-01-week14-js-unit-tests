@@ -9,28 +9,28 @@ function rpnCalculator(expression) {
   const numExp = expression.split(' ');
   const opRegex = /[+-/*]\B/g;
   const math = {
-    '+': function plus(x, y) { return x + y },
-    '-': function minus(x, y) { return x - y },
-    '/': function division(x, y) { return x / y },
-    '*': function multiply(x, y) { return x * y }
+    '+': (x, y) => x + y,
+    '-': (x, y) => x - y,
+    '/': (x, y) => x / y,
+    '*': (x, y) => x * y,
   }
   function iterate() {
-    let index = numExp.findIndex((element) => String(element).match(opRegex) );
+    const index = numExp.findIndex(element => String(element).match(opRegex));
     const calc = (op) => {
-      let newValue = math[op](Number(numExp[index-2]),Number(numExp[index-1]))
-      numExp.splice(index-2, 3, newValue);
+      const newValue = math[op](Number(numExp[index - 2]), Number(numExp[index - 1]));
+      numExp.splice(index - 2, 3, newValue);
       return numExp;
     };
-    if (index !== -1) {
-        calc(numExp[index])
-    };
-    return numExp
-  };
+    if (index == -1) {
+      throw "Você não usou operadores adequados."
+    }
+    calc(numExp[index]);
 
-  while(numExp.length !== 1) iterate();
-  return Number(numExp)
+    return numExp;
+  }
+
+  while (numExp.length !== 1) iterate();
+  return Number(numExp);
 }
-
-rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -');
 
 module.exports = rpnCalculator;

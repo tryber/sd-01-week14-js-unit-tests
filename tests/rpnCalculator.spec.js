@@ -27,4 +27,9 @@ describe('check if rpn calculator works', () => {
   it('rpn string 5', () => {
     expect(rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -')).toBe(5);
   });
+  it('rpn no operators', () => {
+    expect(() => {
+      rpnCalculator('5 6');
+    }).toThrow();
+  });
 });

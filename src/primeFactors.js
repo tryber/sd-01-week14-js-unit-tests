@@ -13,7 +13,7 @@ function primeFactors(number) {
   }
   for (let i = 2; i <= decoyNumber; i += 1) {
     const storage = decoyNumber;
-    while(decoyNumber % i === 0) {
+    while (decoyNumber % i === 0) {
       addToFactors(i);
       addToFactors(decoyNumber);
       decoyNumber /= i;
