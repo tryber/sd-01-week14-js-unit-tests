@@ -14,11 +14,11 @@ const NumerosBinariosExistentes = (number, binary) => {
 function printBinary(number) {
   let arrayBinary = [];
   const binaryList = [];
-  for (let i = 0; i < number; i++) {
+  for (let i = 0; i < number; i += 1) {
     arrayBinary.push('1');
   }
   arrayBinary = parseInt(arrayBinary.join(''), 2);
-  for (let i = 0; i <= arrayBinary; i++) {
+  for (let i = 0; i <= arrayBinary; i += 1) {
     binaryList.push(i);
   }
   return binaryList.map(decimal => NumerosBinariosExistentes(number, decimal.toString(2)));
