@@ -6,3 +6,15 @@ const rpnCalculator = require('../src/rpnCalculator');
 // Qualquer outro operador deve lançar um erro
 
 // ps: utilize os exemplos da documentação (README.md) para contrinuir com os teste
+
+describe('Requisito RpnCalculator', () => {
+  it('Retornar o resultado da expressão', () => {
+    expect(rpnCalculator('3 4 +')).toStrictEqual(7);
+    expect(rpnCalculator('3 4 - 5 +')).toStrictEqual(4);
+    expect(rpnCalculator('3 4 - 5 *')).toStrictEqual(-5);
+    expect(rpnCalculator('3 4 5 * -')).toStrictEqual(-17);
+  });
+  it('Retornar uma mensagem de erro se a função não suportar o operador', () => {
+    expect(() => rpnCalculator('3 4 Arctic 5 *')).toThrow('A função não suporta este operador ou ela não existe');
+  });
+});
