@@ -9,9 +9,12 @@ describe('#printBinary', () => {
   it('should print binary numbers until 1', () => {
     expect(printBinary(1)).toEqual(['0', '1']);
   });
-
   it('should print binary numbers until 2', () => {
     expect(printBinary(2)).toEqual(['00', '01', '10', '11']);
+  });
+  it('should print an empty array for NaN and not numbers values', () => {
+    expect(printBinary(undefined)).toStrictEqual([]);
+    expect(printBinary(NaN)).toStrictEqual([]);
   });
   it('when you enter the value 0', () => {
     expect(printBinary(0)).toEqual([]);
