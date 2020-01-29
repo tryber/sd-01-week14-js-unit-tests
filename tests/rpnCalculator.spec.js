@@ -13,6 +13,7 @@ describe('Requisito RpnCalculator', () => {
     expect(rpnCalculator('3 4 - 5 +')).toStrictEqual(4);
     expect(rpnCalculator('3 4 - 5 *')).toStrictEqual(-5);
     expect(rpnCalculator('3 4 5 * -')).toStrictEqual(-17);
+    expect(rpnCalculator('15 7 1 1 + - / 3 * 2 1 1 + + -')).toStrictEqual(5);
   });
   it('Retornar uma mensagem de erro se a função não suportar o operador', () => {
     expect(() => rpnCalculator('3 4 Arctic 5 *')).toThrow('A função não suporta este operador ou ela não existe');
