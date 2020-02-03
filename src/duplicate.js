@@ -4,6 +4,13 @@
  */
 
 function duplicate(...params) {
+
+  for (param of params) {
+    if(typeof param !== `string` && typeof param !== `number`) {
+      return 'Insira strings ou numeros';
+    };
+  };
+
   const storage = [];
   const booleanArray = [...params].map((param) => {
     if (storage.includes(param)) {
