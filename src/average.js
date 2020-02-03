@@ -5,7 +5,11 @@
 */
 
 function average(...params) {
-  if (params === '') return undefined;
+  for (param of params) {
+    if (typeof param !== 'number') {
+      return undefined;
+    }
+  }
   const sum = params.reduce((total, each) => total + each, 0);
   return sum / params.length;
 }
