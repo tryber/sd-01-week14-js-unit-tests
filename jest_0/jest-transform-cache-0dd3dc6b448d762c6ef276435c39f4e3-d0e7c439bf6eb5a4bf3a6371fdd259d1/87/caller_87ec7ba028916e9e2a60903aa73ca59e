@@ -1,0 +1,19 @@
+e26ef3e6a9803f8534c4ee608328b120
+/*
+  A função caller recebe uma função ${fn} e dois parâmetros ${a} e ${b}
+  e retorna o resultado da chamada de ${fn} com os parâmetros ${a} e ${b}
+
+  exemplo:
+
+  caller(some, a, b)
+
+  é a mesma coisa que:
+
+  some(a, b)
+*/
+function caller(fn, a, b) {
+  return fn(a, b);
+}
+
+module.exports = caller;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNhbGxlci5qcyJdLCJuYW1lcyI6WyJjYWxsZXIiLCJmbiIsImEiLCJiIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7OztBQWFBLFNBQVNBLE1BQVQsQ0FBZ0JDLEVBQWhCLEVBQW9CQyxDQUFwQixFQUF1QkMsQ0FBdkIsRUFBMEI7QUFDeEIsU0FBT0YsRUFBRSxDQUFDQyxDQUFELEVBQUlDLENBQUosQ0FBVDtBQUNEOztBQUVEQyxNQUFNLENBQUNDLE9BQVAsR0FBaUJMLE1BQWpCIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAgQSBmdW7Dp8OjbyBjYWxsZXIgcmVjZWJlIHVtYSBmdW7Dp8OjbyAke2ZufSBlIGRvaXMgcGFyw6JtZXRyb3MgJHthfSBlICR7Yn1cbiAgZSByZXRvcm5hIG8gcmVzdWx0YWRvIGRhIGNoYW1hZGEgZGUgJHtmbn0gY29tIG9zIHBhcsOibWV0cm9zICR7YX0gZSAke2J9XG5cbiAgZXhlbXBsbzpcblxuICBjYWxsZXIoc29tZSwgYSwgYilcblxuICDDqSBhIG1lc21hIGNvaXNhIHF1ZTpcblxuICBzb21lKGEsIGIpXG4qL1xuXG5mdW5jdGlvbiBjYWxsZXIoZm4sIGEsIGIpIHtcbiAgcmV0dXJuIGZuKGEsIGIpO1xufVxuXG5tb2R1bGUuZXhwb3J0cyA9IGNhbGxlcjtcbiJdfQ==

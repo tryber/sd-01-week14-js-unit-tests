@@ -5,22 +5,20 @@
 
 function primeFactors(number) {
   let decoyNumber = number;
-  const factors = [1, decoyNumber];
+  const factors = [];
   function addToFactors(n) {
     if (!factors.includes(n)) {
       factors.push(n);
     }
   }
-  for (let i = 2; i <= decoyNumber; i += 1) {
-    const storage = decoyNumber;
-    while (decoyNumber % i === 0) {
-      addToFactors(i);
-      addToFactors(decoyNumber);
-      decoyNumber /= i;
+  for (let i = 2; i < decoyNumber; i += 1) {
+    if (decoyNumber % i === 0) {
+      while (decoyNumber % i === 0 && (decoyNumber / i) % i === 0) {
+        decoyNumber /= i;
+      }
+      addToFactors(i)
     }
-    decoyNumber = storage;
   }
-
   return factors;
 }
 

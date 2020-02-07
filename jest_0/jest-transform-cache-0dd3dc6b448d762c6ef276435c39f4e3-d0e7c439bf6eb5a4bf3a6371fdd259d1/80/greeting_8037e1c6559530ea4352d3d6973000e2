@@ -1,0 +1,13 @@
+c4a625bb474182434aba3de7540dd148
+/*
+  A função greeting recebe um parâmetro ${param} e retorna "Hello ${param}!"
+  Caso o parâmetro ${param} não seja enviado,
+  um erro é lançado com a mensagem "You must send something to greet!"
+*/
+function greeting(param) {
+  if (!param) throw new Error('You must send something to greet!');
+  return `Hello ${param}!`;
+}
+
+module.exports = greeting;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdyZWV0aW5nLmpzIl0sIm5hbWVzIjpbImdyZWV0aW5nIiwicGFyYW0iLCJFcnJvciIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiJBQUFBOzs7OztBQU1BLFNBQVNBLFFBQVQsQ0FBa0JDLEtBQWxCLEVBQXlCO0FBQ3ZCLE1BQUksQ0FBQ0EsS0FBTCxFQUFZLE1BQU0sSUFBSUMsS0FBSixDQUFVLG1DQUFWLENBQU47QUFDWixTQUFRLFNBQVFELEtBQU0sR0FBdEI7QUFDRDs7QUFFREUsTUFBTSxDQUFDQyxPQUFQLEdBQWlCSixRQUFqQiIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gIEEgZnVuw6fDo28gZ3JlZXRpbmcgcmVjZWJlIHVtIHBhcsOibWV0cm8gJHtwYXJhbX0gZSByZXRvcm5hIFwiSGVsbG8gJHtwYXJhbX0hXCJcbiAgQ2FzbyBvIHBhcsOibWV0cm8gJHtwYXJhbX0gbsOjbyBzZWphIGVudmlhZG8sXG4gIHVtIGVycm8gw6kgbGFuw6dhZG8gY29tIGEgbWVuc2FnZW0gXCJZb3UgbXVzdCBzZW5kIHNvbWV0aGluZyB0byBncmVldCFcIlxuKi9cblxuZnVuY3Rpb24gZ3JlZXRpbmcocGFyYW0pIHtcbiAgaWYgKCFwYXJhbSkgdGhyb3cgbmV3IEVycm9yKCdZb3UgbXVzdCBzZW5kIHNvbWV0aGluZyB0byBncmVldCEnKTtcbiAgcmV0dXJuIGBIZWxsbyAke3BhcmFtfSFgO1xufVxuXG5tb2R1bGUuZXhwb3J0cyA9IGdyZWV0aW5nO1xuIl19

@@ -1,0 +1,29 @@
+32a7a89026490f6584f24a1a39ff333b
+/*
+  A função duplicate recebe uma lista de parâmetros (tamanho variável)
+  e retorna `true` se existe algum elemento duplicado e `false` caso contrário
+ */
+function duplicate(...params) {
+  for (param of params) {
+    if (typeof param !== `string` && typeof param !== `number`) {
+      return 'Insira strings ou numeros';
+    }
+
+    ;
+  }
+
+  ;
+  const storage = [];
+  const booleanArray = [...params].map(param => {
+    if (storage.includes(param)) {
+      return true;
+    }
+
+    storage.push(param);
+    return false;
+  });
+  return booleanArray.includes(true);
+}
+
+module.exports = duplicate;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImR1cGxpY2F0ZS5qcyJdLCJuYW1lcyI6WyJkdXBsaWNhdGUiLCJwYXJhbXMiLCJwYXJhbSIsInN0b3JhZ2UiLCJib29sZWFuQXJyYXkiLCJtYXAiLCJpbmNsdWRlcyIsInB1c2giLCJtb2R1bGUiLCJleHBvcnRzIl0sIm1hcHBpbmdzIjoiQUFBQTs7OztBQUtBLFNBQVNBLFNBQVQsQ0FBbUIsR0FBR0MsTUFBdEIsRUFBOEI7QUFFNUIsT0FBS0MsS0FBTCxJQUFjRCxNQUFkLEVBQXNCO0FBQ3BCLFFBQUcsT0FBT0MsS0FBUCxLQUFrQixRQUFsQixJQUE2QixPQUFPQSxLQUFQLEtBQWtCLFFBQWxELEVBQTJEO0FBQ3pELGFBQU8sMkJBQVA7QUFDRDs7QUFBQTtBQUNGOztBQUFBO0FBRUQsUUFBTUMsT0FBTyxHQUFHLEVBQWhCO0FBQ0EsUUFBTUMsWUFBWSxHQUFHLENBQUMsR0FBR0gsTUFBSixFQUFZSSxHQUFaLENBQWlCSCxLQUFELElBQVc7QUFDOUMsUUFBSUMsT0FBTyxDQUFDRyxRQUFSLENBQWlCSixLQUFqQixDQUFKLEVBQTZCO0FBQzNCLGFBQU8sSUFBUDtBQUNEOztBQUNEQyxJQUFBQSxPQUFPLENBQUNJLElBQVIsQ0FBYUwsS0FBYjtBQUNBLFdBQU8sS0FBUDtBQUNELEdBTm9CLENBQXJCO0FBT0EsU0FBT0UsWUFBWSxDQUFDRSxRQUFiLENBQXNCLElBQXRCLENBQVA7QUFDRDs7QUFFREUsTUFBTSxDQUFDQyxPQUFQLEdBQWlCVCxTQUFqQiIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gIEEgZnVuw6fDo28gZHVwbGljYXRlIHJlY2ViZSB1bWEgbGlzdGEgZGUgcGFyw6JtZXRyb3MgKHRhbWFuaG8gdmFyacOhdmVsKVxuICBlIHJldG9ybmEgYHRydWVgIHNlIGV4aXN0ZSBhbGd1bSBlbGVtZW50byBkdXBsaWNhZG8gZSBgZmFsc2VgIGNhc28gY29udHLDoXJpb1xuICovXG5cbmZ1bmN0aW9uIGR1cGxpY2F0ZSguLi5wYXJhbXMpIHtcblxuICBmb3IgKHBhcmFtIG9mIHBhcmFtcykge1xuICAgIGlmKHR5cGVvZiBwYXJhbSAhPT0gYHN0cmluZ2AgJiYgdHlwZW9mIHBhcmFtICE9PSBgbnVtYmVyYCkge1xuICAgICAgcmV0dXJuICdJbnNpcmEgc3RyaW5ncyBvdSBudW1lcm9zJztcbiAgICB9O1xuICB9O1xuXG4gIGNvbnN0IHN0b3JhZ2UgPSBbXTtcbiAgY29uc3QgYm9vbGVhbkFycmF5ID0gWy4uLnBhcmFtc10ubWFwKChwYXJhbSkgPT4ge1xuICAgIGlmIChzdG9yYWdlLmluY2x1ZGVzKHBhcmFtKSkge1xuICAgICAgcmV0dXJuIHRydWU7XG4gICAgfVxuICAgIHN0b3JhZ2UucHVzaChwYXJhbSk7XG4gICAgcmV0dXJuIGZhbHNlO1xuICB9KTtcbiAgcmV0dXJuIGJvb2xlYW5BcnJheS5pbmNsdWRlcyh0cnVlKTtcbn1cblxubW9kdWxlLmV4cG9ydHMgPSBkdXBsaWNhdGU7XG4iXX0=
