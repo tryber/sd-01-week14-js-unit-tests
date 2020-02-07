@@ -17,6 +17,8 @@ describe('#average', () => {
     expect(averageMock).toHaveReturnedWith(expect.any(Number));
     averageMock('oi')
     expect(averageMock).toHaveReturnedWith(undefined);
+    averageMock(true)
+    expect(averageMock).toHaveReturnedWith(undefined);
   });
 
   it('expect average of 3, 4, 5 should be 4', () => {

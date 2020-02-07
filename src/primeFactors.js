@@ -7,7 +7,7 @@ function primeFactors(number) {
   let decoyNumber = number;
   const factors = [1, decoyNumber];
   function addToFactors(n) {
-    if (!factors.includes(n)) {
+    if (!factors.includes(n) && n !== 1) {
       factors.push(n);
     }
   }
@@ -20,8 +20,12 @@ function primeFactors(number) {
     }
     decoyNumber = storage;
   }
-
-  return factors;
+  return factors.filter(each => {
+    for(let j = 2; j < each; j++) {
+      return each % j === 0 && each !== j || each % j === 0 && each === j  ? false : true;
+    }
+  });
 }
 
+console.log(primeFactors(100))
 module.exports = primeFactors;

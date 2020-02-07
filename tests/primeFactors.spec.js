@@ -5,10 +5,10 @@ const primeFactors = require('../src/primeFactors');
 
 describe('tests if function is delivering prime factors correctly', () => {
   it('prime factors of 100', () => {
-    expect(primeFactors(100)).toContainEqual(1, 2, 4, 5, 10, 20, 25, 50, 100);
+    expect(primeFactors(100)).toContainEqual(1, 2, 5);
   });
 
   it('prime factors of 200', () => {
-    expect(primeFactors(200)).toContainEqual(1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 200);
+    expect(primeFactors(200)).toContainEqual(1, 2, 4, 5);
   });
 });
