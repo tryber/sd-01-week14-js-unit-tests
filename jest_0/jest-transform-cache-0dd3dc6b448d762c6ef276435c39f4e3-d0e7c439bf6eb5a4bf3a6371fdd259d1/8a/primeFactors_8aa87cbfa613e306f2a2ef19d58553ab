@@ -1,0 +1,24 @@
+ef7a4389bbbae373c0b2b01241f04add
+/*
+  A função primeFactors recebe um número inteiro ${number}
+  e retorna uma lista com todos os fatores primos desse parâmetro
+
+  Por exemplo:
+
+  - os fatores primos para o número 15 são [3, 5], pois:
+    1) 3 * 5 = 15
+    2) ambos 3 e 5 são números primos
+  - os fatores primos para o número 9 são [3, 3], pois:
+    1) 3 * 3 = 9
+    2) 3, que aparece duas vezes, é um número primo
+  - os fatores primos para o número 12 são [2, 2, 3], pois:
+    1) 2 * 2 * 3 = 12
+    2) 2, que aparece duas vezes, e 3 são números primos
+
+  Para mais informações acerca de fatores primos, acesse esta página:
+    -> https://pt.wikipedia.org/wiki/Fator_primo
+*/
+function primeFactors(number) {}
+
+module.exports = primeFactors;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByaW1lRmFjdG9ycy5qcyJdLCJuYW1lcyI6WyJwcmltZUZhY3RvcnMiLCJudW1iZXIiLCJtb2R1bGUiLCJleHBvcnRzIl0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQW9CQSxTQUFTQSxZQUFULENBQXNCQyxNQUF0QixFQUE4QixDQUFFOztBQUVoQ0MsTUFBTSxDQUFDQyxPQUFQLEdBQWlCSCxZQUFqQiIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gIEEgZnVuw6fDo28gcHJpbWVGYWN0b3JzIHJlY2ViZSB1bSBuw7ptZXJvIGludGVpcm8gJHtudW1iZXJ9XG4gIGUgcmV0b3JuYSB1bWEgbGlzdGEgY29tIHRvZG9zIG9zIGZhdG9yZXMgcHJpbW9zIGRlc3NlIHBhcsOibWV0cm9cblxuICBQb3IgZXhlbXBsbzpcblxuICAtIG9zIGZhdG9yZXMgcHJpbW9zIHBhcmEgbyBuw7ptZXJvIDE1IHPDo28gWzMsIDVdLCBwb2lzOlxuICAgIDEpIDMgKiA1ID0gMTVcbiAgICAyKSBhbWJvcyAzIGUgNSBzw6NvIG7Dum1lcm9zIHByaW1vc1xuICAtIG9zIGZhdG9yZXMgcHJpbW9zIHBhcmEgbyBuw7ptZXJvIDkgc8OjbyBbMywgM10sIHBvaXM6XG4gICAgMSkgMyAqIDMgPSA5XG4gICAgMikgMywgcXVlIGFwYXJlY2UgZHVhcyB2ZXplcywgw6kgdW0gbsO6bWVybyBwcmltb1xuICAtIG9zIGZhdG9yZXMgcHJpbW9zIHBhcmEgbyBuw7ptZXJvIDEyIHPDo28gWzIsIDIsIDNdLCBwb2lzOlxuICAgIDEpIDIgKiAyICogMyA9IDEyXG4gICAgMikgMiwgcXVlIGFwYXJlY2UgZHVhcyB2ZXplcywgZSAzIHPDo28gbsO6bWVyb3MgcHJpbW9zXG5cbiAgUGFyYSBtYWlzIGluZm9ybWHDp8O1ZXMgYWNlcmNhIGRlIGZhdG9yZXMgcHJpbW9zLCBhY2Vzc2UgZXN0YSBww6FnaW5hOlxuICAgIC0+IGh0dHBzOi8vcHQud2lraXBlZGlhLm9yZy93aWtpL0ZhdG9yX3ByaW1vXG4qL1xuXG5mdW5jdGlvbiBwcmltZUZhY3RvcnMobnVtYmVyKSB7fVxuXG5tb2R1bGUuZXhwb3J0cyA9IHByaW1lRmFjdG9ycztcbiJdfQ==

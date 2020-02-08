@@ -1,0 +1,19 @@
+a955ee3a247a50bee4ecfa1c0efc1139
+/*
+  A função average recebe uma lista de parâmetros (tamanho variável)
+  e retorna a média dos valores recebidos
+  Caso a função receba algum valor não número, o valor undefined deve ser retornado
+*/
+function average(...params) {
+  for (param of params) {
+    if (typeof param !== 'number') {
+      return undefined;
+    }
+  }
+
+  const sum = params.reduce((total, each) => total + each, 0);
+  return sum / params.length;
+}
+
+module.exports = average;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF2ZXJhZ2UuanMiXSwibmFtZXMiOlsiYXZlcmFnZSIsInBhcmFtcyIsInBhcmFtIiwidW5kZWZpbmVkIiwic3VtIiwicmVkdWNlIiwidG90YWwiLCJlYWNoIiwibGVuZ3RoIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7O0FBTUEsU0FBU0EsT0FBVCxDQUFpQixHQUFHQyxNQUFwQixFQUE0QjtBQUMxQixPQUFLQyxLQUFMLElBQWNELE1BQWQsRUFBc0I7QUFDcEIsUUFBSSxPQUFPQyxLQUFQLEtBQWlCLFFBQXJCLEVBQStCO0FBQzdCLGFBQU9DLFNBQVA7QUFDRDtBQUNGOztBQUNELFFBQU1DLEdBQUcsR0FBR0gsTUFBTSxDQUFDSSxNQUFQLENBQWMsQ0FBQ0MsS0FBRCxFQUFRQyxJQUFSLEtBQWlCRCxLQUFLLEdBQUdDLElBQXZDLEVBQTZDLENBQTdDLENBQVo7QUFDQSxTQUFPSCxHQUFHLEdBQUdILE1BQU0sQ0FBQ08sTUFBcEI7QUFDRDs7QUFFREMsTUFBTSxDQUFDQyxPQUFQLEdBQWlCVixPQUFqQiIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gIEEgZnVuw6fDo28gYXZlcmFnZSByZWNlYmUgdW1hIGxpc3RhIGRlIHBhcsOibWV0cm9zICh0YW1hbmhvIHZhcmnDoXZlbClcbiAgZSByZXRvcm5hIGEgbcOpZGlhIGRvcyB2YWxvcmVzIHJlY2ViaWRvc1xuICBDYXNvIGEgZnVuw6fDo28gcmVjZWJhIGFsZ3VtIHZhbG9yIG7Do28gbsO6bWVybywgbyB2YWxvciB1bmRlZmluZWQgZGV2ZSBzZXIgcmV0b3JuYWRvXG4qL1xuXG5mdW5jdGlvbiBhdmVyYWdlKC4uLnBhcmFtcykge1xuICBmb3IgKHBhcmFtIG9mIHBhcmFtcykge1xuICAgIGlmICh0eXBlb2YgcGFyYW0gIT09ICdudW1iZXInKSB7XG4gICAgICByZXR1cm4gdW5kZWZpbmVkO1xuICAgIH1cbiAgfVxuICBjb25zdCBzdW0gPSBwYXJhbXMucmVkdWNlKCh0b3RhbCwgZWFjaCkgPT4gdG90YWwgKyBlYWNoLCAwKTtcbiAgcmV0dXJuIHN1bSAvIHBhcmFtcy5sZW5ndGg7XG59XG5cbm1vZHVsZS5leHBvcnRzID0gYXZlcmFnZTtcbiJdfQ==

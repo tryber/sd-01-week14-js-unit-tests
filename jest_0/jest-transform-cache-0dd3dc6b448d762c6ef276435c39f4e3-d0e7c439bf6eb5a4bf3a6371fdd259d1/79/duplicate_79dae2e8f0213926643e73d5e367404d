@@ -1,0 +1,34 @@
+8e7db961562d6ad37e936f0747f44333
+/*
+  A função duplicate recebe uma lista de parâmetros (tamanho variável)
+  e retorna `true` se existe algum elemento duplicado e `false` caso contrário
+ */
+function duplicate(...params) {
+  for (param of params) {
+    if (typeof param !== `string` && typeof param !== `number`) {
+      return 'Insira strings ou numeros';
+    }
+
+    ;
+  }
+
+  ;
+  const storage = [];
+
+  const verificationFunction = () => {
+    const booleanArray = [...params].map(param => {
+      if (storage.includes(param)) {
+        return true;
+      }
+
+      storage.push(param);
+      return false;
+    });
+    return booleanArray.includes(true);
+  };
+
+  return verificationFunction();
+}
+
+module.exports = duplicate;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImR1cGxpY2F0ZS5qcyJdLCJuYW1lcyI6WyJkdXBsaWNhdGUiLCJwYXJhbXMiLCJwYXJhbSIsInN0b3JhZ2UiLCJ2ZXJpZmljYXRpb25GdW5jdGlvbiIsImJvb2xlYW5BcnJheSIsIm1hcCIsImluY2x1ZGVzIiwicHVzaCIsIm1vZHVsZSIsImV4cG9ydHMiXSwibWFwcGluZ3MiOiJBQUFBOzs7O0FBS0EsU0FBU0EsU0FBVCxDQUFtQixHQUFHQyxNQUF0QixFQUE4QjtBQUM1QixPQUFLQyxLQUFMLElBQWNELE1BQWQsRUFBc0I7QUFDcEIsUUFBRyxPQUFPQyxLQUFQLEtBQWtCLFFBQWxCLElBQTZCLE9BQU9BLEtBQVAsS0FBa0IsUUFBbEQsRUFBMkQ7QUFDekQsYUFBTywyQkFBUDtBQUNEOztBQUFBO0FBQ0Y7O0FBQUE7QUFFRCxRQUFNQyxPQUFPLEdBQUcsRUFBaEI7O0FBQ0EsUUFBTUMsb0JBQW9CLEdBQUcsTUFBTTtBQUNqQyxVQUFNQyxZQUFZLEdBQUcsQ0FBQyxHQUFHSixNQUFKLEVBQVlLLEdBQVosQ0FBaUJKLEtBQUQsSUFBVztBQUM5QyxVQUFJQyxPQUFPLENBQUNJLFFBQVIsQ0FBaUJMLEtBQWpCLENBQUosRUFBNkI7QUFDM0IsZUFBTyxJQUFQO0FBQ0Q7O0FBQ0RDLE1BQUFBLE9BQU8sQ0FBQ0ssSUFBUixDQUFhTixLQUFiO0FBQ0EsYUFBTyxLQUFQO0FBQ0QsS0FOb0IsQ0FBckI7QUFRQSxXQUFPRyxZQUFZLENBQUNFLFFBQWIsQ0FBc0IsSUFBdEIsQ0FBUDtBQUNELEdBVkQ7O0FBWUEsU0FBT0gsb0JBQW9CLEVBQTNCO0FBQ0Q7O0FBRURLLE1BQU0sQ0FBQ0MsT0FBUCxHQUFpQlYsU0FBakIiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICBBIGZ1bsOnw6NvIGR1cGxpY2F0ZSByZWNlYmUgdW1hIGxpc3RhIGRlIHBhcsOibWV0cm9zICh0YW1hbmhvIHZhcmnDoXZlbClcbiAgZSByZXRvcm5hIGB0cnVlYCBzZSBleGlzdGUgYWxndW0gZWxlbWVudG8gZHVwbGljYWRvIGUgYGZhbHNlYCBjYXNvIGNvbnRyw6FyaW9cbiAqL1xuXG5mdW5jdGlvbiBkdXBsaWNhdGUoLi4ucGFyYW1zKSB7XG4gIGZvciAocGFyYW0gb2YgcGFyYW1zKSB7XG4gICAgaWYodHlwZW9mIHBhcmFtICE9PSBgc3RyaW5nYCAmJiB0eXBlb2YgcGFyYW0gIT09IGBudW1iZXJgKSB7XG4gICAgICByZXR1cm4gJ0luc2lyYSBzdHJpbmdzIG91IG51bWVyb3MnO1xuICAgIH07XG4gIH07XG5cbiAgY29uc3Qgc3RvcmFnZSA9IFtdO1xuICBjb25zdCB2ZXJpZmljYXRpb25GdW5jdGlvbiA9ICgpID0+IHtcbiAgICBjb25zdCBib29sZWFuQXJyYXkgPSBbLi4ucGFyYW1zXS5tYXAoKHBhcmFtKSA9PiB7XG4gICAgICBpZiAoc3RvcmFnZS5pbmNsdWRlcyhwYXJhbSkpIHtcbiAgICAgICAgcmV0dXJuIHRydWU7XG4gICAgICB9XG4gICAgICBzdG9yYWdlLnB1c2gocGFyYW0pO1xuICAgICAgcmV0dXJuIGZhbHNlO1xuICAgIH0pO1xuXG4gICAgcmV0dXJuIGJvb2xlYW5BcnJheS5pbmNsdWRlcyh0cnVlKTtcbiAgfVxuXG4gIHJldHVybiB2ZXJpZmljYXRpb25GdW5jdGlvbigpO1xufVxuXG5tb2R1bGUuZXhwb3J0cyA9IGR1cGxpY2F0ZTtcbiJdfQ==

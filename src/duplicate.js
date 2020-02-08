@@ -4,9 +4,9 @@
  */
 
 function duplicate(...params) {
-
-  for (param of params) {
-    if(typeof param !== `string` && typeof param !== `number`) {
+  const strOrNum = [...params].map(param => typeof param);
+  for (type of strOrNum) {
+    if(type !== `string` && type !== `number`) {
       return 'Insira strings ou numeros';
     };
   };

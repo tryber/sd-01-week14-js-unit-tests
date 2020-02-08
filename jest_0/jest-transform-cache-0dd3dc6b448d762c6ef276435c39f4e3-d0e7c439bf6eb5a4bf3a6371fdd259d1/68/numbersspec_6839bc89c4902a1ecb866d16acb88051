@@ -1,0 +1,18 @@
+aa7209eb85b7b9eaea3b89fb3a81e134
+const numbers = require('../src/numbers'); // A função deve receber uma quantidade qualquer de parâmetros
+// A função deve retornar o valor true se todos os elementos forem do tipo Number
+// A função deve retornar o valor false se algum elemento não for do tipo Number
+
+
+describe('#numbers', () => {
+  it('the params 1, 4, 3, 2, 5 are numbers', () => {
+    expect(numbers(1, 4, 3, 2, 5)).toBeTruthy();
+  });
+  it('the params 1, "a", 3 are not numbers', () => {
+    expect(numbers(1, 'a', 3)).toBeFalsy();
+  });
+  it('the params 1 3, NaN are numbers', () => {
+    expect(numbers(1, 3, NaN)).toBeTruthy();
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm51bWJlcnMuc3BlYy5qcyJdLCJuYW1lcyI6WyJudW1iZXJzIiwicmVxdWlyZSIsImRlc2NyaWJlIiwiaXQiLCJleHBlY3QiLCJ0b0JlVHJ1dGh5IiwidG9CZUZhbHN5IiwiTmFOIl0sIm1hcHBpbmdzIjoiQUFBQSxNQUFNQSxPQUFPLEdBQUdDLE9BQU8sQ0FBQyxnQkFBRCxDQUF2QixDLENBRUE7QUFDQTtBQUNBOzs7QUFFQUMsUUFBUSxDQUFDLFVBQUQsRUFBYSxNQUFNO0FBQ3pCQyxFQUFBQSxFQUFFLENBQUMsc0NBQUQsRUFBeUMsTUFBTTtBQUMvQ0MsSUFBQUEsTUFBTSxDQUFDSixPQUFPLENBQUMsQ0FBRCxFQUFJLENBQUosRUFBTyxDQUFQLEVBQVUsQ0FBVixFQUFhLENBQWIsQ0FBUixDQUFOLENBQStCSyxVQUEvQjtBQUNELEdBRkMsQ0FBRjtBQUlBRixFQUFBQSxFQUFFLENBQUMsc0NBQUQsRUFBeUMsTUFBTTtBQUMvQ0MsSUFBQUEsTUFBTSxDQUFDSixPQUFPLENBQUMsQ0FBRCxFQUFJLEdBQUosRUFBUyxDQUFULENBQVIsQ0FBTixDQUEyQk0sU0FBM0I7QUFDRCxHQUZDLENBQUY7QUFJQUgsRUFBQUEsRUFBRSxDQUFDLGlDQUFELEVBQW9DLE1BQU07QUFDMUNDLElBQUFBLE1BQU0sQ0FBQ0osT0FBTyxDQUFDLENBQUQsRUFBSSxDQUFKLEVBQU9PLEdBQVAsQ0FBUixDQUFOLENBQTJCRixVQUEzQjtBQUNELEdBRkMsQ0FBRjtBQUdELENBWk8sQ0FBUiIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IG51bWJlcnMgPSByZXF1aXJlKCcuLi9zcmMvbnVtYmVycycpO1xuXG4vLyBBIGZ1bsOnw6NvIGRldmUgcmVjZWJlciB1bWEgcXVhbnRpZGFkZSBxdWFscXVlciBkZSBwYXLDom1ldHJvc1xuLy8gQSBmdW7Dp8OjbyBkZXZlIHJldG9ybmFyIG8gdmFsb3IgdHJ1ZSBzZSB0b2RvcyBvcyBlbGVtZW50b3MgZm9yZW0gZG8gdGlwbyBOdW1iZXJcbi8vIEEgZnVuw6fDo28gZGV2ZSByZXRvcm5hciBvIHZhbG9yIGZhbHNlIHNlIGFsZ3VtIGVsZW1lbnRvIG7Do28gZm9yIGRvIHRpcG8gTnVtYmVyXG5cbmRlc2NyaWJlKCcjbnVtYmVycycsICgpID0+IHtcbiAgaXQoJ3RoZSBwYXJhbXMgMSwgNCwgMywgMiwgNSBhcmUgbnVtYmVycycsICgpID0+IHtcbiAgICBleHBlY3QobnVtYmVycygxLCA0LCAzLCAyLCA1KSkudG9CZVRydXRoeSgpO1xuICB9KTtcblxuICBpdCgndGhlIHBhcmFtcyAxLCBcImFcIiwgMyBhcmUgbm90IG51bWJlcnMnLCAoKSA9PiB7XG4gICAgZXhwZWN0KG51bWJlcnMoMSwgJ2EnLCAzKSkudG9CZUZhbHN5KCk7XG4gIH0pO1xuXG4gIGl0KCd0aGUgcGFyYW1zIDEgMywgTmFOIGFyZSBudW1iZXJzJywgKCkgPT4ge1xuICAgIGV4cGVjdChudW1iZXJzKDEsIDMsIE5hTikpLnRvQmVUcnV0aHkoKTtcbiAgfSk7XG59KTtcbiJdfQ==

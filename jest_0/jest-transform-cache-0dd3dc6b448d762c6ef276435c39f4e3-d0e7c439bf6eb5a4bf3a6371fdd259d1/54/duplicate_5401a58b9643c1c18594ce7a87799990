@@ -1,0 +1,29 @@
+91e833d36bd37749c413292a8307996d
+/*
+  A função duplicate recebe uma lista de parâmetros (tamanho variável)
+  e retorna `true` se existe algum elemento duplicado e `false` caso contrário
+ */
+function duplicate(...params) {
+  for (param of params) {
+    if (typeof param !== `string` && typeof param !== `number`) {
+      return 'Insira strings ou numeros';
+    }
+
+    ;
+  }
+
+  ;
+  const storage = [];
+  const booleanArray = [...params].forEach(param => {
+    if (storage.includes(param)) {
+      return true;
+    }
+
+    storage.push(param);
+    return false;
+  });
+  return booleanArray.includes(true);
+}
+
+module.exports = duplicate;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImR1cGxpY2F0ZS5qcyJdLCJuYW1lcyI6WyJkdXBsaWNhdGUiLCJwYXJhbXMiLCJwYXJhbSIsInN0b3JhZ2UiLCJib29sZWFuQXJyYXkiLCJmb3JFYWNoIiwiaW5jbHVkZXMiLCJwdXNoIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7QUFLQSxTQUFTQSxTQUFULENBQW1CLEdBQUdDLE1BQXRCLEVBQThCO0FBRTVCLE9BQUtDLEtBQUwsSUFBY0QsTUFBZCxFQUFzQjtBQUNwQixRQUFHLE9BQU9DLEtBQVAsS0FBa0IsUUFBbEIsSUFBNkIsT0FBT0EsS0FBUCxLQUFrQixRQUFsRCxFQUEyRDtBQUN6RCxhQUFPLDJCQUFQO0FBQ0Q7O0FBQUE7QUFDRjs7QUFBQTtBQUVELFFBQU1DLE9BQU8sR0FBRyxFQUFoQjtBQUNBLFFBQU1DLFlBQVksR0FBRyxDQUFDLEdBQUdILE1BQUosRUFBWUksT0FBWixDQUFxQkgsS0FBRCxJQUFXO0FBQ2xELFFBQUlDLE9BQU8sQ0FBQ0csUUFBUixDQUFpQkosS0FBakIsQ0FBSixFQUE2QjtBQUMzQixhQUFPLElBQVA7QUFDRDs7QUFDREMsSUFBQUEsT0FBTyxDQUFDSSxJQUFSLENBQWFMLEtBQWI7QUFDQSxXQUFPLEtBQVA7QUFDRCxHQU5vQixDQUFyQjtBQU9BLFNBQU9FLFlBQVksQ0FBQ0UsUUFBYixDQUFzQixJQUF0QixDQUFQO0FBQ0Q7O0FBRURFLE1BQU0sQ0FBQ0MsT0FBUCxHQUFpQlQsU0FBakIiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICBBIGZ1bsOnw6NvIGR1cGxpY2F0ZSByZWNlYmUgdW1hIGxpc3RhIGRlIHBhcsOibWV0cm9zICh0YW1hbmhvIHZhcmnDoXZlbClcbiAgZSByZXRvcm5hIGB0cnVlYCBzZSBleGlzdGUgYWxndW0gZWxlbWVudG8gZHVwbGljYWRvIGUgYGZhbHNlYCBjYXNvIGNvbnRyw6FyaW9cbiAqL1xuXG5mdW5jdGlvbiBkdXBsaWNhdGUoLi4ucGFyYW1zKSB7XG5cbiAgZm9yIChwYXJhbSBvZiBwYXJhbXMpIHtcbiAgICBpZih0eXBlb2YgcGFyYW0gIT09IGBzdHJpbmdgICYmIHR5cGVvZiBwYXJhbSAhPT0gYG51bWJlcmApIHtcbiAgICAgIHJldHVybiAnSW5zaXJhIHN0cmluZ3Mgb3UgbnVtZXJvcyc7XG4gICAgfTtcbiAgfTtcblxuICBjb25zdCBzdG9yYWdlID0gW107XG4gIGNvbnN0IGJvb2xlYW5BcnJheSA9IFsuLi5wYXJhbXNdLmZvckVhY2goKHBhcmFtKSA9PiB7XG4gICAgaWYgKHN0b3JhZ2UuaW5jbHVkZXMocGFyYW0pKSB7XG4gICAgICByZXR1cm4gdHJ1ZTtcbiAgICB9XG4gICAgc3RvcmFnZS5wdXNoKHBhcmFtKTtcbiAgICByZXR1cm4gZmFsc2U7XG4gIH0pO1xuICByZXR1cm4gYm9vbGVhbkFycmF5LmluY2x1ZGVzKHRydWUpO1xufVxuXG5tb2R1bGUuZXhwb3J0cyA9IGR1cGxpY2F0ZTtcbiJdfQ==

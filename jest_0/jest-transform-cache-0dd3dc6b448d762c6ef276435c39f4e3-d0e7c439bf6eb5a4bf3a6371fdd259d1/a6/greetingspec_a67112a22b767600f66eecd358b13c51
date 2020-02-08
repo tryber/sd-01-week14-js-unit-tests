@@ -1,0 +1,5 @@
+b060b1076506fff2611debe76a40226f
+const greeting = require('../src/greeting'); // A função deve receber uma string ${param} e retornar a mensagem 'Hello ${param}!'
+// Se nenhum parâmetro for passado um erro deve ser lançado
+// A mensagem do erro deve ser 'You must send something to greet!'
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdyZWV0aW5nLnNwZWMuanMiXSwibmFtZXMiOlsiZ3JlZXRpbmciLCJyZXF1aXJlIl0sIm1hcHBpbmdzIjoiQUFBQSxNQUFNQSxRQUFRLEdBQUdDLE9BQU8sQ0FBQyxpQkFBRCxDQUF4QixDLENBRUE7QUFDQTtBQUNBIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgZ3JlZXRpbmcgPSByZXF1aXJlKCcuLi9zcmMvZ3JlZXRpbmcnKTtcblxuLy8gQSBmdW7Dp8OjbyBkZXZlIHJlY2ViZXIgdW1hIHN0cmluZyAke3BhcmFtfSBlIHJldG9ybmFyIGEgbWVuc2FnZW0gJ0hlbGxvICR7cGFyYW19ISdcbi8vIFNlIG5lbmh1bSBwYXLDom1ldHJvIGZvciBwYXNzYWRvIHVtIGVycm8gZGV2ZSBzZXIgbGFuw6dhZG9cbi8vIEEgbWVuc2FnZW0gZG8gZXJybyBkZXZlIHNlciAnWW91IG11c3Qgc2VuZCBzb21ldGhpbmcgdG8gZ3JlZXQhJ1xuIl19

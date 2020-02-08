@@ -1,0 +1,14 @@
+0ab77a529d0c95b8f66838d1da411848
+/* eslint no-unused-vars: ["error", { "args": "none" }] */
+
+/*
+  A função last deve retornar o último elemento contido no parâmetro ${param}
+  O parâmetro ${param} pode ser de qualquer tipo
+*/
+function last(param) {
+  const lastParam = arguments[arguments.length - 1];
+  return lastParam[lastParam.length - 1] || lastParam;
+}
+
+module.exports = last;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxhc3QuanMiXSwibmFtZXMiOlsibGFzdCIsInBhcmFtIiwibGFzdFBhcmFtIiwiYXJndW1lbnRzIiwibGVuZ3RoIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJtYXBwaW5ncyI6IkFBQUE7O0FBQ0E7Ozs7QUFLQSxTQUFTQSxJQUFULENBQWNDLEtBQWQsRUFBcUI7QUFDbkIsUUFBTUMsU0FBUyxHQUFHQyxTQUFTLENBQUNBLFNBQVMsQ0FBQ0MsTUFBVixHQUFtQixDQUFwQixDQUEzQjtBQUNBLFNBQU9GLFNBQVMsQ0FBQ0EsU0FBUyxDQUFDRSxNQUFWLEdBQW1CLENBQXBCLENBQVQsSUFBbUNGLFNBQTFDO0FBQ0Q7O0FBRURHLE1BQU0sQ0FBQ0MsT0FBUCxHQUFpQk4sSUFBakIiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBlc2xpbnQgbm8tdW51c2VkLXZhcnM6IFtcImVycm9yXCIsIHsgXCJhcmdzXCI6IFwibm9uZVwiIH1dICovXG4vKlxuICBBIGZ1bsOnw6NvIGxhc3QgZGV2ZSByZXRvcm5hciBvIMO6bHRpbW8gZWxlbWVudG8gY29udGlkbyBubyBwYXLDom1ldHJvICR7cGFyYW19XG4gIE8gcGFyw6JtZXRybyAke3BhcmFtfSBwb2RlIHNlciBkZSBxdWFscXVlciB0aXBvXG4qL1xuXG5mdW5jdGlvbiBsYXN0KHBhcmFtKSB7XG4gIGNvbnN0IGxhc3RQYXJhbSA9IGFyZ3VtZW50c1thcmd1bWVudHMubGVuZ3RoIC0gMV07XG4gIHJldHVybiBsYXN0UGFyYW1bbGFzdFBhcmFtLmxlbmd0aCAtIDFdIHx8IGxhc3RQYXJhbTtcbn1cblxubW9kdWxlLmV4cG9ydHMgPSBsYXN0O1xuIl19

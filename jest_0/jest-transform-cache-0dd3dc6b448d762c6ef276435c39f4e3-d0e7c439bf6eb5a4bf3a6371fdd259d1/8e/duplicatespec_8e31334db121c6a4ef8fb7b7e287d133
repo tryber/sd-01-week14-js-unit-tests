@@ -1,0 +1,15 @@
+a0884bc405f6adf3621c3a0e68d5c0ad
+const duplicate = require('../src/duplicate'); // A função deve receber uma quantidade qualquer de parâmetros
+// A função pode receber strings e números
+// A função retornar true se existirem valores duplicados e false caso contrário
+
+
+describe('#duplicate', () => {
+  it('the params 1, 2, 3 are not duplicated', () => {
+    expect(duplicate(1, 2, 3)).toBeFalsy();
+  });
+  it('the params 1, 2, 3, 2 are duplicated', () => {
+    expect(duplicate(1, 2, 3, 2)).toBeTruthy();
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImR1cGxpY2F0ZS5zcGVjLmpzIl0sIm5hbWVzIjpbImR1cGxpY2F0ZSIsInJlcXVpcmUiLCJkZXNjcmliZSIsIml0IiwiZXhwZWN0IiwidG9CZUZhbHN5IiwidG9CZVRydXRoeSJdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTUEsU0FBUyxHQUFHQyxPQUFPLENBQUMsa0JBQUQsQ0FBekIsQyxDQUVBO0FBQ0E7QUFDQTs7O0FBRUFDLFFBQVEsQ0FBQyxZQUFELEVBQWUsTUFBTTtBQUMzQkMsRUFBQUEsRUFBRSxDQUFDLHVDQUFELEVBQTBDLE1BQU07QUFDaERDLElBQUFBLE1BQU0sQ0FBQ0osU0FBUyxDQUFDLENBQUQsRUFBSSxDQUFKLEVBQU8sQ0FBUCxDQUFWLENBQU4sQ0FBMkJLLFNBQTNCO0FBQ0QsR0FGQyxDQUFGO0FBSUFGLEVBQUFBLEVBQUUsQ0FBQyxzQ0FBRCxFQUF5QyxNQUFNO0FBQy9DQyxJQUFBQSxNQUFNLENBQUNKLFNBQVMsQ0FBQyxDQUFELEVBQUksQ0FBSixFQUFPLENBQVAsRUFBVSxDQUFWLENBQVYsQ0FBTixDQUE4Qk0sVUFBOUI7QUFDRCxHQUZDLENBQUY7QUFHRCxDQVJPLENBQVIiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBkdXBsaWNhdGUgPSByZXF1aXJlKCcuLi9zcmMvZHVwbGljYXRlJyk7XG5cbi8vIEEgZnVuw6fDo28gZGV2ZSByZWNlYmVyIHVtYSBxdWFudGlkYWRlIHF1YWxxdWVyIGRlIHBhcsOibWV0cm9zXG4vLyBBIGZ1bsOnw6NvIHBvZGUgcmVjZWJlciBzdHJpbmdzIGUgbsO6bWVyb3Ncbi8vIEEgZnVuw6fDo28gcmV0b3JuYXIgdHJ1ZSBzZSBleGlzdGlyZW0gdmFsb3JlcyBkdXBsaWNhZG9zIGUgZmFsc2UgY2FzbyBjb250csOhcmlvXG5cbmRlc2NyaWJlKCcjZHVwbGljYXRlJywgKCkgPT4ge1xuICBpdCgndGhlIHBhcmFtcyAxLCAyLCAzIGFyZSBub3QgZHVwbGljYXRlZCcsICgpID0+IHtcbiAgICBleHBlY3QoZHVwbGljYXRlKDEsIDIsIDMpKS50b0JlRmFsc3koKTtcbiAgfSk7XG5cbiAgaXQoJ3RoZSBwYXJhbXMgMSwgMiwgMywgMiBhcmUgZHVwbGljYXRlZCcsICgpID0+IHtcbiAgICBleHBlY3QoZHVwbGljYXRlKDEsIDIsIDMsIDIpKS50b0JlVHJ1dGh5KCk7XG4gIH0pO1xufSk7XG4iXX0=

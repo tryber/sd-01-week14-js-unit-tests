@@ -1,0 +1,16 @@
+31864edb971b9e87fb6f6028a046f0d6
+const printBinary = require('../src/printBinary'); // A função recebe um inteiro e retorna uma lista contendo todos os números em formato binário
+// que podem ser representados com a quantidade de dígitos recebidos por parâmetro
+// Se a função receber algum valor não numérico um array vazio deve ser retornado
+// Se a função receber o valor 0 (zero) um array vazio deve ser retornado
+
+
+describe('#printBinary', () => {
+  it('should print binary numbers until 1', () => {
+    expect(printBinary(1)).toBe(['0', '1']);
+  });
+  it('should print binary numbers until 2', () => {
+    expect(printBinary(2)).toBe(['00', '01', '10', '11']);
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByaW50QmluYXJ5LnNwZWMuanMiXSwibmFtZXMiOlsicHJpbnRCaW5hcnkiLCJyZXF1aXJlIiwiZGVzY3JpYmUiLCJpdCIsImV4cGVjdCIsInRvQmUiXSwibWFwcGluZ3MiOiJBQUFBLE1BQU1BLFdBQVcsR0FBR0MsT0FBTyxDQUFDLG9CQUFELENBQTNCLEMsQ0FFQTtBQUNBO0FBQ0E7QUFDQTs7O0FBRUFDLFFBQVEsQ0FBQyxjQUFELEVBQWlCLE1BQU07QUFDN0JDLEVBQUFBLEVBQUUsQ0FBQyxxQ0FBRCxFQUF3QyxNQUFNO0FBQzlDQyxJQUFBQSxNQUFNLENBQUNKLFdBQVcsQ0FBQyxDQUFELENBQVosQ0FBTixDQUF1QkssSUFBdkIsQ0FBNEIsQ0FBQyxHQUFELEVBQU0sR0FBTixDQUE1QjtBQUNELEdBRkMsQ0FBRjtBQUlBRixFQUFBQSxFQUFFLENBQUMscUNBQUQsRUFBd0MsTUFBTTtBQUM5Q0MsSUFBQUEsTUFBTSxDQUFDSixXQUFXLENBQUMsQ0FBRCxDQUFaLENBQU4sQ0FBdUJLLElBQXZCLENBQTRCLENBQUMsSUFBRCxFQUFPLElBQVAsRUFBYSxJQUFiLEVBQW1CLElBQW5CLENBQTVCO0FBQ0QsR0FGQyxDQUFGO0FBR0QsQ0FSTyxDQUFSIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgcHJpbnRCaW5hcnkgPSByZXF1aXJlKCcuLi9zcmMvcHJpbnRCaW5hcnknKTtcblxuLy8gQSBmdW7Dp8OjbyByZWNlYmUgdW0gaW50ZWlybyBlIHJldG9ybmEgdW1hIGxpc3RhIGNvbnRlbmRvIHRvZG9zIG9zIG7Dum1lcm9zIGVtIGZvcm1hdG8gYmluw6FyaW9cbi8vIHF1ZSBwb2RlbSBzZXIgcmVwcmVzZW50YWRvcyBjb20gYSBxdWFudGlkYWRlIGRlIGTDrWdpdG9zIHJlY2ViaWRvcyBwb3IgcGFyw6JtZXRyb1xuLy8gU2UgYSBmdW7Dp8OjbyByZWNlYmVyIGFsZ3VtIHZhbG9yIG7Do28gbnVtw6lyaWNvIHVtIGFycmF5IHZhemlvIGRldmUgc2VyIHJldG9ybmFkb1xuLy8gU2UgYSBmdW7Dp8OjbyByZWNlYmVyIG8gdmFsb3IgMCAoemVybykgdW0gYXJyYXkgdmF6aW8gZGV2ZSBzZXIgcmV0b3JuYWRvXG5cbmRlc2NyaWJlKCcjcHJpbnRCaW5hcnknLCAoKSA9PiB7XG4gIGl0KCdzaG91bGQgcHJpbnQgYmluYXJ5IG51bWJlcnMgdW50aWwgMScsICgpID0+IHtcbiAgICBleHBlY3QocHJpbnRCaW5hcnkoMSkpLnRvQmUoWycwJywgJzEnXSk7XG4gIH0pO1xuXG4gIGl0KCdzaG91bGQgcHJpbnQgYmluYXJ5IG51bWJlcnMgdW50aWwgMicsICgpID0+IHtcbiAgICBleHBlY3QocHJpbnRCaW5hcnkoMikpLnRvQmUoWycwMCcsICcwMScsICcxMCcsICcxMSddKTtcbiAgfSk7XG59KTtcbiJdfQ==

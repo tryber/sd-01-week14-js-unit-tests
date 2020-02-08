@@ -1,0 +1,12 @@
+a5f481c9bdbf3621140271e9c2c913e2
+const average = require('../src/average'); // A função deve receber uma quantidade qualquer de parâmetros
+// A função deve retornar a média dos números que receber
+// Caso a função receba algum valor não número, o valor undefined deve ser retornado
+
+
+describe('#average', () => {
+  it('expect average of 3, 4, 5 should be 4', () => {
+    expect(average(3, 4, 5).toBe(4));
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF2ZXJhZ2Uuc3BlYy5qcyJdLCJuYW1lcyI6WyJhdmVyYWdlIiwicmVxdWlyZSIsImRlc2NyaWJlIiwiaXQiLCJleHBlY3QiLCJ0b0JlIl0sIm1hcHBpbmdzIjoiQUFBQSxNQUFNQSxPQUFPLEdBQUdDLE9BQU8sQ0FBQyxnQkFBRCxDQUF2QixDLENBRUE7QUFDQTtBQUNBOzs7QUFFQUMsUUFBUSxDQUFDLFVBQUQsRUFBYSxNQUFNO0FBQ3pCQyxFQUFBQSxFQUFFLENBQUMsdUNBQUQsRUFBMEMsTUFBTTtBQUNoREMsSUFBQUEsTUFBTSxDQUFDSixPQUFPLENBQUMsQ0FBRCxFQUFJLENBQUosRUFBTyxDQUFQLENBQVAsQ0FBaUJLLElBQWpCLENBQXNCLENBQXRCLENBQUQsQ0FBTjtBQUNELEdBRkMsQ0FBRjtBQUdELENBSk8sQ0FBUiIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGF2ZXJhZ2UgPSByZXF1aXJlKCcuLi9zcmMvYXZlcmFnZScpO1xuXG4vLyBBIGZ1bsOnw6NvIGRldmUgcmVjZWJlciB1bWEgcXVhbnRpZGFkZSBxdWFscXVlciBkZSBwYXLDom1ldHJvc1xuLy8gQSBmdW7Dp8OjbyBkZXZlIHJldG9ybmFyIGEgbcOpZGlhIGRvcyBuw7ptZXJvcyBxdWUgcmVjZWJlclxuLy8gQ2FzbyBhIGZ1bsOnw6NvIHJlY2ViYSBhbGd1bSB2YWxvciBuw6NvIG7Dum1lcm8sIG8gdmFsb3IgdW5kZWZpbmVkIGRldmUgc2VyIHJldG9ybmFkb1xuXG5kZXNjcmliZSgnI2F2ZXJhZ2UnLCAoKSA9PiB7XG4gIGl0KCdleHBlY3QgYXZlcmFnZSBvZiAzLCA0LCA1IHNob3VsZCBiZSA0JywgKCkgPT4ge1xuICAgIGV4cGVjdChhdmVyYWdlKDMsIDQsIDUpLnRvQmUoNCkpO1xuICB9KTtcbn0pO1xuIl19
