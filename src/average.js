@@ -6,7 +6,7 @@
 
 function average(...params) {
   const paramsTypes = [...params].map(param => typeof param);
-  if(!paramsTypes.includes('number')) {
+  if (!paramsTypes.includes('number')) {
     return undefined;
   }
   const sum = params.reduce((total, each) => total + each, 0);
