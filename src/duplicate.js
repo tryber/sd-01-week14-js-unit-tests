@@ -5,11 +5,9 @@
 
 function duplicate(...params) {
   const strOrNum = [...params].map(param => typeof param);
-  for (type of strOrNum) {
-    if(type !== `string` && type !== `number`) {
-      return 'Insira strings ou numeros';
-    };
-  };
+  if(!(strOrNum.includes('string') || strOrNum.includes('number'))) {
+    return 'Insira strings ou numeros';
+  }
 
   const storage = [];
   const booleanArray = [...params].map((param) => {
