@@ -12,7 +12,9 @@ describe('#average', () => {
     const parametersArray = [];
     [...testParameters].forEach(each => {
       return parametersArray.push(Number(each))
-    })
+    });
+
+    expect([...testParameters].length).toStrictEqual(expect.any(Number));
     averageMock(...parametersArray)
     expect(averageMock).toHaveReturnedWith(expect.any(Number));
     averageMock('oi')

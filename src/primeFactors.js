@@ -5,27 +5,19 @@
 
 function primeFactors(number) {
   let decoyNumber = number;
-  const factors = [1, decoyNumber];
-  function addToFactors(n) {
-    if (!factors.includes(n) && n !== 1) {
-      factors.push(n);
-    }
+  const factors = [];
+  if(String(number).match(/[/*\-+=.]/g) !== null) {
+    return 'This number is not an integer';
   }
   for (let i = 2; i <= decoyNumber; i += 1) {
-    const storage = decoyNumber;
+    pirateFlag = true;
     while (decoyNumber % i === 0) {
-      addToFactors(i);
-      addToFactors(decoyNumber);
-      decoyNumber /= i;
-    }
-    decoyNumber = storage;
+        decoyNumber /= i;
+        factors.push(i);
+      }
+   }
+  return factors;
   }
-  return factors.filter(each => {
-    for(let j = 2; j < each; j++) {
-      return each % j === 0 && each !== j || each % j === 0 && each === j  ? false : true;
-    }
-  });
-}
 
-console.log(primeFactors(100))
+  primeFactors(90)
 module.exports = primeFactors;
