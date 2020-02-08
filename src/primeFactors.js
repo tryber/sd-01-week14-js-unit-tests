@@ -10,7 +10,6 @@ function primeFactors(number) {
     return 'This number is not an integer';
   }
   for (let i = 2; i <= decoyNumber; i += 1) {
-    pirateFlag = true;
     while (decoyNumber % i === 0) {
         decoyNumber /= i;
         factors.push(i);
