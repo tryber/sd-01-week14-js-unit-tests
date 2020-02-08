@@ -12,21 +12,21 @@ describe('#duplicate', () => {
   it('the params 1, 2, 3, 2 are duplicated', () => {
     expect(duplicate(1, 2, 3, 2)).toBeTruthy();
   });
-  it ('the function returns false when no string is duplicated', () => {
+  it('the function returns false when no string is duplicated', () => {
     expect(duplicate('a', 'b', 'carro')).toBeFalsy();
   });
-  it ('the function returns truth when a string is duplicated', () => {
-    expect(duplicate('carro','a', 'b', 'carro')).toBeTruthy();
+  it('the function returns truth when a string is duplicated', () => {
+    expect(duplicate('carro', 'a', 'b', 'carro')).toBeTruthy();
   });
   it('if the params dont receive string or numbers as parameters returns warning string', () => {
     const duplicateMock = jest.fn((...params) => duplicate(...params));
-    duplicateMock('string','anotherString');
+    duplicateMock('string', 'anotherString');
     expect(duplicateMock).not.toHaveReturnedWith('Insira strings ou numeros');
-    duplicateMock(1,2,3,4,5);
+    duplicateMock(1, 2, 3, 4, 5);
     expect(duplicateMock).not.toHaveReturnedWith('Insira strings ou numeros');
-    duplicateMock({1: 'space', 2:'space'});
+    duplicateMock({ 1: 'space', 2: 'space' });
     expect(duplicateMock).toHaveReturnedWith('Insira strings ou numeros');
-    duplicateMock([1,2,3,4]);
+    duplicateMock([1, 2, 3, 4]);
     expect(duplicateMock).toHaveReturnedWith('Insira strings ou numeros');
   });
 });

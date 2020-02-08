@@ -10,16 +10,14 @@ describe('#average', () => {
     const mathRandom = Math.floor(Math.random() * 10);
     const testParameters = '1'.repeat(mathRandom);
     const parametersArray = [];
-    [...testParameters].forEach(each => {
-      return parametersArray.push(Number(each))
-    });
+    [...testParameters].forEach(each => parametersArray.push(Number(each)));
 
     expect([...testParameters].length).toStrictEqual(expect.any(Number));
-    averageMock(...parametersArray)
+    averageMock(...parametersArray);
     expect(averageMock).toHaveReturnedWith(expect.any(Number));
-    averageMock('oi')
+    averageMock('oi');
     expect(averageMock).toHaveReturnedWith(undefined);
-    averageMock(true)
+    averageMock(true);
     expect(averageMock).toHaveReturnedWith(undefined);
   });
 

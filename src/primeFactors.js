@@ -6,17 +6,16 @@
 function primeFactors(number) {
   let decoyNumber = number;
   const factors = [];
-  if(String(number).match(/[/*\-+=.]/g) !== null) {
+  if (String(number).match(/[/*\-+=.]/g) !== null) {
     return 'This number is not an integer';
   }
   for (let i = 2; i <= decoyNumber; i += 1) {
     while (decoyNumber % i === 0) {
-        decoyNumber /= i;
-        factors.push(i);
-      }
-   }
-  return factors;
+      decoyNumber /= i;
+      factors.push(i);
+    }
   }
+  return factors;
+}
 
-  primeFactors(90)
 module.exports = primeFactors;

@@ -5,7 +5,7 @@
 
 function duplicate(...params) {
   const strOrNum = [...params].map(param => typeof param);
-  if(!(strOrNum.includes('string') || strOrNum.includes('number'))) {
+  if (!(strOrNum.includes('string') || strOrNum.includes('number'))) {
     return 'Insira strings ou numeros';
   }
 
